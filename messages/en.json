@@ -1,0 +1,161 @@
+{
+  "Meta": {
+    "title": "Vikram Sathguru — Senior Full Stack Developer",
+    "description": "Senior Full Stack Developer with 10+ years of experience building scalable web platforms, e-commerce solutions, CRM systems, and AI-powered automation. PolarSync · NUS."
+  },
+  "Nav": {
+    "portfolio": "Portfolio",
+    "about": "About Me",
+    "contact": "Contact Us",
+    "openMenu": "Open menu",
+    "home": "Vikram Sathguru — home",
+    "language": "Language"
+  },
+  "Hero": {
+    "role": "Senior Full Stack Developer",
+    "company": "PolarSync",
+    "headline": "Delivering quality software with unmatched performance.",
+    "tagline": "I design and develop scalable web platforms, e-commerce solutions, CRM systems, and AI automation that create lasting business value.",
+    "ctaTalk": "Let's Talk",
+    "ctaPortfolio": "View Portfolio",
+    "bannerAlt": "Vikram Sathguru portfolio banner"
+  },
+  "Portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Our Work",
+    "description": "Selected client work across fashion commerce, LATAM retail apps, multi-vendor marketplaces, and full-stack CRM systems.",
+    "empty": "No projects in this category yet.",
+    "filters": {
+      "all": "All Work",
+      "web": "Web Development",
+      "mobile": "Mobile App",
+      "uiux": "UI/UX Design",
+      "ecommerce": "E-Commerce",
+      "ai": "AI & Automation"
+    }
+  },
+  "Expertise": {
+    "eyebrow": "Technical skills",
+    "title": "Expertise across the stack",
+    "description": "From frontend craft to backend systems, e-commerce, CRM, and AI-powered automation — built for reliability and scale.",
+    "areas": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Responsive, intuitive interfaces with modern React architectures and design-conscious delivery."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs and services that power SaaS platforms, marketplaces, and business automation."
+      },
+      "database": {
+        "title": "Database",
+        "description": "Reliable data models, migrations, and multi-database architectures for large customer datasets."
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Storefronts and commerce operations — from catalogs and checkout to order management."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "Intelligent assistants and workflow automation that reduce manual work and improve support."
+      },
+      "business": {
+        "title": "Business Systems",
+        "description": "CRM platforms, marketing integrations, and automation that keep teams operating efficiently."
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "About me",
+    "title": "Systems that keep creating value after launch",
+    "p1": "Senior Full Stack Developer with 10+ years of experience designing and developing scalable web platforms, business management systems, e-commerce solutions, and automation tools.",
+    "p2": "I specialize in building reliable digital products using React, Next.js, Node.js, Python, PostgreSQL, MySQL, and modern cloud technologies. My experience includes developing custom CRM platforms, API integrations, customer management systems, marketing automation solutions, and AI-powered applications.",
+    "p3": "I have worked with international companies and remote teams, delivering solutions that improve operational efficiency, automate business processes, and create better customer experiences. My approach combines clean architecture, intuitive UX, secure integrations, and long-term scalability.",
+    "stats": {
+      "years": "Years experience",
+      "education": "MSc & BSc Computer Science",
+      "reach": "Remote & international teams"
+    },
+    "experienceEyebrow": "Job experience",
+    "jobTitle": "Senior Full Stack Developer",
+    "company": "PolarSync",
+    "highlights": {
+      "h1": "Designed and developed scalable web platforms, SaaS applications, marketplaces, and business automation systems using React, Next.js, Node.js, TypeScript, Python, and PostgreSQL.",
+      "h2": "Built custom CRM platforms for customer management, database organization, workflow automation, and business process optimization.",
+      "h3": "Developed AI-powered chatbot systems and intelligent assistants that automate customer communication and generate personalized responses.",
+      "h4": "Delivered marketplace platforms with advanced user management, payment integrations, product catalogs, and scalable backend architectures.",
+      "h5": "Designed database structures and migration processes for large customer datasets using PostgreSQL, MySQL, and MongoDB."
+    },
+    "processEyebrow": "How I work",
+    "process": {
+      "01": {
+        "title": "Ideas",
+        "text": "Clarify goals, users, and constraints so the product direction is sharp before build begins."
+      },
+      "02": {
+        "title": "Design",
+        "text": "Shape architecture and UX that feel intuitive, trustworthy, and ready to scale."
+      },
+      "03": {
+        "title": "Develop",
+        "text": "Ship reliable systems with React, Next.js, Node.js, and clean, maintainable APIs."
+      },
+      "04": {
+        "title": "Real Impact",
+        "text": "Launch solutions that improve efficiency, automate work, and keep creating business value."
+      }
+    },
+    "educationEyebrow": "Education history",
+    "masters": "Master's Degree, Computer Science",
+    "bachelors": "Bachelor's Degree, Computer Science",
+    "school": "National University of Singapore (NUS)",
+    "mastersPeriod": "Aug 2017 – Jun 2019",
+    "bachelorsPeriod": "Aug 2013 – Jun 2017",
+    "singapore": "Singapore",
+    "location": "Singapore · Remote-friendly"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's discuss your project",
+    "description": "Tell me about your web platform, e-commerce store, CRM, or automation idea — I'll help turn it into a product that keeps creating value.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "name": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@company.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+65 ...",
+    "message": "Project Details",
+    "messagePlaceholder": "Share your goals, timeline, and stack preferences...",
+    "submit": "Send Message",
+    "sent": "Opening your email client… If nothing opens, write to",
+    "mailSubject": "Portfolio inquiry from {name}"
+  },
+  "Footer": {
+    "blurb": "Senior Full Stack Developer building scalable web platforms, e-commerce, CRM, and AI automation.",
+    "navigate": "Navigate",
+    "connect": "Connect",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "Featured": {
+    "eyebrow": "Featured case studies",
+    "title": "Work that proves the craft",
+    "description": "Real products I shipped — commerce platforms, multi-vendor marketplaces, and CRM systems — with screenshots, architecture decisions, and measurable outcomes.",
+    "viewCase": "View case study"
+  },
+  "CaseStudy": {
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results",
+    "highlights": "What I delivered",
+    "tech": "Stack & systems",
+    "gallery": "Product surfaces",
+    "cmsNote": "Screens managed as CMS media assets — landing, store, and admin views for each engagement.",
+    "cta": "Start a similar project",
+    "back": "Back to portfolio"
+  }
+}

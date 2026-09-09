@@ -1,0 +1,149 @@
+{
+  "id": "crm-imp",
+  "slug": "crm-imp",
+  "featured": true,
+  "order": 4,
+  "categories": ["web", "ai", "uiux"],
+  "cover": "/portfolio/crm-imp/landing.png",
+  "tech": ["React", "Node.js", "Python", "PostgreSQL", "REST API", "AI Workflows", "Dashboard UX"],
+  "metrics": [
+    {
+      "value": "6",
+      "label": {
+        "en": "Integrated CRM modules",
+        "pt": "Módulos CRM integrados",
+        "es": "Módulos CRM integrados",
+        "ja": "統合CRMモジュール",
+        "zh": "集成 CRM 模块"
+      }
+    },
+    {
+      "value": "AI",
+      "label": {
+        "en": "Training & simulation layer",
+        "pt": "Camada de treino e simulação",
+        "es": "Capa de entrenamiento y simulación",
+        "ja": "トレーニング/シミュレーション層",
+        "zh": "训练与模拟层"
+      }
+    },
+    {
+      "value": "Full-stack",
+      "label": {
+        "en": "React · Node · Python",
+        "pt": "React · Node · Python",
+        "es": "React · Node · Python",
+        "ja": "React · Node · Python",
+        "zh": "React · Node · Python"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/portfolio/crm-imp/landing.png",
+      "alt": {
+        "en": "CRM IMP module selection dashboard",
+        "pt": "Dashboard de módulos do CRM IMP",
+        "es": "Dashboard de módulos del CRM IMP",
+        "ja": "CRM IMP モジュール選択ダッシュボード",
+        "zh": "CRM IMP 模块选择仪表盘"
+      },
+      "label": {
+        "en": "Modules",
+        "pt": "Módulos",
+        "es": "Módulos",
+        "ja": "モジュール",
+        "zh": "模块"
+      }
+    },
+    {
+      "src": "/portfolio/crm-imp/admin.png",
+      "alt": {
+        "en": "CRM IMP admin/operations screen",
+        "pt": "Tela admin/operações do CRM IMP",
+        "es": "Pantalla admin/operaciones del CRM IMP",
+        "ja": "CRM IMP 管理画面",
+        "zh": "CRM IMP 管理界面"
+      },
+      "label": {
+        "en": "Admin",
+        "pt": "Admin",
+        "es": "Admin",
+        "ja": "管理",
+        "zh": "管理"
+      }
+    }
+  ],
+  "content": {
+    "en": {
+      "title": "CRM IMP",
+      "summary": "Full-stack lead management system with AI training, autodialer, prospecting, webinars, trends radar, and VSL tooling.",
+      "role": "Full-stack development · Product UI · Module architecture",
+      "challenge": "Turn a detailed functional specification into a robust web system — React frontend, Node.js + Python backend, database integrations — with clear navigation and business rules already defined.",
+      "solution": "Implemented a modular CRM shell (AI training, automatic dialing, prospecting, webinar studio, trends radar, VSL) with consistent dark-mode dashboard UX and API-backed workflows for lead growth teams.",
+      "results": "A cohesive operations platform where teams switch modules without leaving a unified product experience.",
+      "highlights": [
+        "Modular dashboard for lead-growth workflows",
+        "AI training & simulation capabilities",
+        "Autodialer campaigns, queues, and quick actions",
+        "Webinar, trends radar, and VSL tooling in one shell"
+      ]
+    },
+    "pt": {
+      "title": "CRM IMP",
+      "summary": "Sistema full-stack de gestão de leads com treino de IA, discagem automática, prospecção, webinars, radar de tendências e VSL.",
+      "role": "Desenvolvimento full-stack · UI de produto · Arquitetura de módulos",
+      "challenge": "Transformar especificação funcional detalhada em sistema web robusto — React, Node.js + Python e banco — com navegação e regras de negócio já definidas.",
+      "solution": "Implementei um shell modular de CRM (treino IA, discagem, prospecção, webinar, radar, VSL) com UX consistente em dark mode e fluxos via API.",
+      "results": "Plataforma operacional coesa em que times trocam de módulo sem sair da mesma experiência de produto.",
+      "highlights": [
+        "Dashboard modular para crescimento de leads",
+        "Capacitação e simulações com IA",
+        "Discador com campanhas, filas e ações rápidas",
+        "Webinar, radar e VSL no mesmo shell"
+      ]
+    },
+    "es": {
+      "title": "CRM IMP",
+      "summary": "Sistema full-stack de gestión de leads con entrenamiento IA, marcación automática, prospección, webinars, radar de tendencias y VSL.",
+      "role": "Desarrollo full-stack · UI de producto · Arquitectura modular",
+      "challenge": "Convertir una especificación funcional detallada en un sistema web robusto con React, Node.js + Python e integraciones de base de datos.",
+      "solution": "Implementé un shell modular de CRM con UX dark-mode consistente y flujos respaldados por API.",
+      "results": "Una plataforma operativa unificada para equipos de crecimiento de leads.",
+      "highlights": [
+        "Dashboard modular para crecimiento de leads",
+        "Entrenamiento y simulaciones con IA",
+        "Marcador con campañas, colas y acciones rápidas",
+        "Webinar, radar y VSL en el mismo shell"
+      ]
+    },
+    "ja": {
+      "title": "CRM IMP",
+      "summary": "AIトレーニング、自動ダイヤル、見込み客管理、ウェビナー、トレンドレーダー、VSLを備えたフルスタックCRM。",
+      "role": "フルスタック開発 · プロダクトUI · モジュール設計",
+      "challenge": "詳細仕様を React / Node.js / Python の堅牢なWebシステムへ実装すること。",
+      "solution": "ダークモード統一UXのモジュール型CRMシェルとAPI連携ワークフローを実装。",
+      "results": "チームが同一プロダクト体験のままモジュールを切り替えられる運用基盤。",
+      "highlights": [
+        "リード成長向けモジュラーダッシュボード",
+        "AIトレーニング/シミュレーション",
+        "キャンペーン・キュー対応の自動ダイヤル",
+        "ウェビナー / レーダー / VSL を統合"
+      ]
+    },
+    "zh": {
+      "title": "CRM IMP",
+      "summary": "全栈线索管理系统：AI 培训、自动拨号、拓客、网络研讨会、趋势雷达与 VSL 工具。",
+      "role": "全栈开发 · 产品 UI · 模块架构",
+      "challenge": "将详细功能规格落地为稳健的 Web 系统（React、Node.js + Python、数据库集成）。",
+      "solution": "实现模块化 CRM 外壳与统一暗色仪表盘体验，以及面向增长团队的 API 工作流。",
+      "results": "团队可在统一产品体验内切换模块的运营平台。",
+      "highlights": [
+        "面向线索增长的模块化仪表盘",
+        "AI 培训与模拟能力",
+        "自动拨号活动、队列与快捷操作",
+        "同一壳层内的研讨会、雷达与 VSL"
+      ]
+    }
+  }
+}

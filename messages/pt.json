@@ -1,0 +1,161 @@
+{
+  "Meta": {
+    "title": "Vikram Sathguru — Desenvolvedor Full Stack Sênior",
+    "description": "Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência criando plataformas web escaláveis, e-commerce, CRMs e automação com IA. PolarSync · NUS."
+  },
+  "Nav": {
+    "portfolio": "Portfólio",
+    "about": "Sobre mim",
+    "contact": "Fale conosco",
+    "openMenu": "Abrir menu",
+    "home": "Vikram Sathguru — início",
+    "language": "Idioma"
+  },
+  "Hero": {
+    "role": "Desenvolvedor Full Stack Sênior",
+    "company": "PolarSync",
+    "headline": "Entregando software de qualidade com desempenho incomparável.",
+    "tagline": "Eu projeto e desenvolvo plataformas web escaláveis, soluções de e-commerce, sistemas CRM e automação com IA que geram valor duradouro.",
+    "ctaTalk": "Vamos conversar",
+    "ctaPortfolio": "Ver portfólio",
+    "bannerAlt": "Banner do portfólio de Vikram Sathguru"
+  },
+  "Portfolio": {
+    "eyebrow": "Portfólio",
+    "title": "Nosso trabalho",
+    "description": "Trabalhos selecionados em comércio de moda, apps LATAM, marketplaces multi-vendedor e sistemas CRM full-stack.",
+    "empty": "Ainda não há projetos nesta categoria.",
+    "filters": {
+      "all": "Todos",
+      "web": "Desenvolvimento Web",
+      "mobile": "App Mobile",
+      "uiux": "UI/UX Design",
+      "ecommerce": "E-Commerce",
+      "ai": "IA e Automação"
+    }
+  },
+  "Expertise": {
+    "eyebrow": "Habilidades técnicas",
+    "title": "Expertise em toda a stack",
+    "description": "Do frontend aos sistemas backend, e-commerce, CRM e automação com IA — feitos para confiabilidade e escala.",
+    "areas": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Interfaces responsivas e intuitivas com arquiteturas React modernas."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs e serviços para SaaS, marketplaces e automação de negócios."
+      },
+      "database": {
+        "title": "Banco de dados",
+        "description": "Modelos confiáveis, migrações e arquiteturas multi-banco."
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Lojas e operações — de catálogos e checkout à gestão de pedidos."
+      },
+      "ai": {
+        "title": "IA e Automação",
+        "description": "Assistentes inteligentes e automação que reduzem trabalho manual."
+      },
+      "business": {
+        "title": "Sistemas de negócios",
+        "description": "CRMs, integrações de marketing e automação operacional."
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "Sobre mim",
+    "title": "Sistemas que continuam gerando valor após o lançamento",
+    "p1": "Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência projetando e desenvolvendo plataformas web escaláveis, sistemas de gestão, e-commerce e ferramentas de automação.",
+    "p2": "Especializo-me em produtos digitais confiáveis com React, Next.js, Node.js, Python, PostgreSQL, MySQL e cloud. Minha experiência inclui CRMs personalizados, integrações de API, gestão de clientes, automação de marketing e aplicações com IA.",
+    "p3": "Trabalhei com empresas internacionais e times remotos, entregando soluções que melhoram eficiência, automatizam processos e criam melhores experiências. Minha abordagem une arquitetura limpa, UX intuitiva, integrações seguras e escalabilidade de longo prazo.",
+    "stats": {
+      "years": "Anos de experiência",
+      "education": "Mestrado e Bacharelado em Ciência da Computação",
+      "reach": "Times remotos e internacionais"
+    },
+    "experienceEyebrow": "Experiência profissional",
+    "jobTitle": "Desenvolvedor Full Stack Sênior",
+    "company": "PolarSync",
+    "highlights": {
+      "h1": "Projetei e desenvolvi plataformas web escaláveis, SaaS, marketplaces e automação com React, Next.js, Node.js, TypeScript, Python e PostgreSQL.",
+      "h2": "Construí CRMs personalizados para gestão de clientes, organização de dados, automação de fluxos e otimização de processos.",
+      "h3": "Desenvolvi chatbots com IA e assistentes inteligentes que automatizam comunicação e geram respostas personalizadas.",
+      "h4": "Entreguei marketplaces com gestão de usuários, pagamentos, catálogos e backends escaláveis.",
+      "h5": "Desenhei estruturas de banco e migrações para grandes conjuntos de dados com PostgreSQL, MySQL e MongoDB."
+    },
+    "processEyebrow": "Como eu trabalho",
+    "process": {
+      "01": {
+        "title": "Ideias",
+        "text": "Esclareço objetivos, usuários e restrições antes de construir."
+      },
+      "02": {
+        "title": "Design",
+        "text": "Defino arquitetura e UX intuitivas, confiáveis e prontas para escalar."
+      },
+      "03": {
+        "title": "Desenvolver",
+        "text": "Entrego sistemas confiáveis com React, Next.js, Node.js e APIs limpas."
+      },
+      "04": {
+        "title": "Impacto real",
+        "text": "Lanço soluções que melhoram eficiência e continuam gerando valor."
+      }
+    },
+    "educationEyebrow": "Formação",
+    "masters": "Mestrado em Ciência da Computação",
+    "bachelors": "Bacharelado em Ciência da Computação",
+    "school": "National University of Singapore (NUS)",
+    "mastersPeriod": "Ago 2017 – Jun 2019",
+    "bachelorsPeriod": "Ago 2013 – Jun 2017",
+    "singapore": "Singapura",
+    "location": "Singapura · Remoto"
+  },
+  "Contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos falar do seu projeto",
+    "description": "Conte-me sobre sua plataforma web, loja, CRM ou ideia de automação — eu ajudo a transformá-la em um produto que gera valor.",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "location": "Localização",
+    "name": "Nome completo",
+    "namePlaceholder": "Seu nome",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "voce@empresa.com",
+    "phoneLabel": "Telefone",
+    "phonePlaceholder": "+55 ...",
+    "message": "Detalhes do projeto",
+    "messagePlaceholder": "Compartilhe objetivos, prazo e preferências de stack...",
+    "submit": "Enviar mensagem",
+    "sent": "Abrindo seu cliente de e-mail… Se nada abrir, escreva para",
+    "mailSubject": "Contato do portfólio de {name}"
+  },
+  "Footer": {
+    "blurb": "Desenvolvedor Full Stack Sênior criando plataformas web escaláveis, e-commerce, CRM e automação com IA.",
+    "navigate": "Navegar",
+    "connect": "Conectar",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados.",
+    "backToTop": "Voltar ao topo"
+  },
+  "Featured": {
+    "eyebrow": "Cases em destaque",
+    "title": "Trabalho que prova o ofício",
+    "description": "Produtos reais que entreguei — plataformas de comércio, marketplaces multi-vendedor e sistemas CRM — com telas, decisões de arquitetura e resultados.",
+    "viewCase": "Ver case"
+  },
+  "CaseStudy": {
+    "challenge": "Desafio",
+    "solution": "Solução",
+    "results": "Resultados",
+    "highlights": "O que entreguei",
+    "tech": "Stack e sistemas",
+    "gallery": "Superfícies do produto",
+    "cmsNote": "Telas geridas como mídia de CMS — landing, loja e admin de cada projeto.",
+    "cta": "Iniciar um projeto semelhante",
+    "back": "Voltar ao portfólio"
+  }
+}

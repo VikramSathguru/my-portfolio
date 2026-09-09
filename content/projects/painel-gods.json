@@ -1,0 +1,149 @@
+{
+  "id": "painel-gods",
+  "slug": "painel-gods",
+  "featured": true,
+  "order": 3,
+  "categories": ["ecommerce", "web", "uiux"],
+  "cover": "/portfolio/painel-gods/landing.png",
+  "tech": ["WordPress", "WooCommerce", "Dokan / WCFM", "Pix Split", "Asaas / Iugu", "MySQL", "Vendor Dashboards"],
+  "metrics": [
+    {
+      "value": "Multi-vendor",
+      "label": {
+        "en": "Seller dashboards & chat",
+        "pt": "Painéis de vendedor e chat",
+        "es": "Paneles de vendedor y chat",
+        "ja": "出品者ダッシュボードとチャット",
+        "zh": "卖家后台与聊天"
+      }
+    },
+    {
+      "value": "Pix Split",
+      "label": {
+        "en": "Native payment splitting",
+        "pt": "Split de pagamento nativo",
+        "es": "Split de pago nativo",
+        "ja": "ネイティブ決済スプリット",
+        "zh": "原生支付分账"
+      }
+    },
+    {
+      "value": "7–14d",
+      "label": {
+        "en": "Hold window for disputes",
+        "pt": "Carência para disputas",
+        "es": "Retención para disputas",
+        "ja": "紛争対応の保留期間",
+        "zh": "争议保留期"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/portfolio/painel-gods/landing.png",
+      "alt": {
+        "en": "Painel Gods marketplace landing",
+        "pt": "Landing do marketplace Painel Gods",
+        "es": "Landing del marketplace Painel Gods",
+        "ja": "Painel Gods マーケットプレイス",
+        "zh": "Painel Gods 市场落地页"
+      },
+      "label": {
+        "en": "Landing",
+        "pt": "Landing",
+        "es": "Landing",
+        "ja": "ランディング",
+        "zh": "落地页"
+      }
+    },
+    {
+      "src": "/portfolio/painel-gods/shop.png",
+      "alt": {
+        "en": "Painel Gods shop/catalog experience",
+        "pt": "Experiência de loja/catálogo Painel Gods",
+        "es": "Experiencia de tienda/catálogo Painel Gods",
+        "ja": "Painel Gods ショップ体験",
+        "zh": "Painel Gods 商店体验"
+      },
+      "label": {
+        "en": "Store",
+        "pt": "Loja",
+        "es": "Tienda",
+        "ja": "ストア",
+        "zh": "商店"
+      }
+    }
+  ],
+  "content": {
+    "en": {
+      "title": "Painel Gods Marketplace",
+      "summary": "Multi-vendor digital marketplace with Pix split payments, seller dashboards, dispute holds, and moderated listings.",
+      "role": "Marketplace architecture · Payments · Vendor UX",
+      "challenge": "Configure a legally/financially safe multi-vendor marketplace on the client’s hosting where Pix split sends funds to seller subaccounts and only commission hits the platform CNPJ — with retention windows for MED/refunds and manual listing approval.",
+      "solution": "Structured WordPress + WooCommerce + Dokan/WCFM vendor panels, chat, moderation workflow, and split-payment gateway configuration (Asaas/Iugu). UX emphasizes trust, speed, and clear seller/buyer journeys.",
+      "results": "A marketplace foundation with secure money movement, seller tooling, and dispute-ready operational rules.",
+      "highlights": [
+        "Multi-vendor dashboards and internal chat",
+        "Native Pix split to seller subaccounts",
+        "Balance retention rules for refunds/MED",
+        "Manual listing moderation for quality control"
+      ]
+    },
+    "pt": {
+      "title": "Marketplace Painel Gods",
+      "summary": "Marketplace multi-vendedor com split Pix, painéis de vendedor, carência para disputas e anúncios moderados.",
+      "role": "Arquitetura de marketplace · Pagamentos · UX do vendedor",
+      "challenge": "Estruturar marketplace seguro na hospedagem do cliente, com split Pix para subcontas dos vendedores e comissão no CNPJ da plataforma — com carência para reembolsos/MED e aprovação manual de anúncios.",
+      "solution": "WordPress + WooCommerce + Dokan/WCFM, chat, moderação e gateway de split (Asaas/Iugu). UX focada em confiança, velocidade e jornadas claras.",
+      "results": "Base de marketplace com movimentação financeira segura, ferramentas de vendedor e regras operacionais para disputas.",
+      "highlights": [
+        "Painéis multi-vendedor e chat interno",
+        "Split Pix nativo para subcontas",
+        "Retenção de saldo para reembolsos/MED",
+        "Moderação manual de anúncios"
+      ]
+    },
+    "es": {
+      "title": "Marketplace Painel Gods",
+      "summary": "Marketplace multi-vendedor con split Pix, paneles de vendedor, retención para disputas y anuncios moderados.",
+      "role": "Arquitectura marketplace · Pagos · UX de vendedor",
+      "challenge": "Configurar un marketplace seguro en el hosting del cliente, con split Pix a subcuentas y comisión al CNPJ — con retención para reembolsos/MED y aprobación manual.",
+      "solution": "WordPress + WooCommerce + Dokan/WCFM, chat, moderación y gateway de split. UX centrada en confianza y velocidad.",
+      "results": "Base de marketplace con movimiento de fondos seguro y reglas operativas para disputas.",
+      "highlights": [
+        "Paneles multi-vendedor y chat interno",
+        "Split Pix nativo a subcuentas",
+        "Retención de saldo para reembolsos/MED",
+        "Moderación manual de anuncios"
+      ]
+    },
+    "ja": {
+      "title": "Painel Gods マーケットプレイス",
+      "summary": "Pixスプリット決済、出品者ダッシュボード、紛争保留、審査制リスティングのマルチベンダー市場。",
+      "role": "マーケット設計 · 決済 · 出品者UX",
+      "challenge": "クライアントホスティング上で、Pixスプリットと保留ルール、手動審査を備えた安全なマルチベンダー基盤を構築すること。",
+      "solution": "WordPress + WooCommerce + Dokan/WCFM、チャット、モデレーション、スプリットゲートウェイを構成。信頼と速度を重視。",
+      "results": "安全な資金フローと出品者ツール、紛争対応ルールを備えた市場基盤。",
+      "highlights": [
+        "マルチベンダーダッシュボードとチャット",
+        "出品者サブ口座へのPixスプリット",
+        "返金/MED向け残高保留",
+        "手動リスティング審査"
+      ]
+    },
+    "zh": {
+      "title": "Painel Gods 多商户市场",
+      "summary": "支持 Pix 分账、卖家后台、争议冻结与人工审核上架的多商户数字市场。",
+      "role": "市场架构 · 支付 · 卖家体验",
+      "challenge": "在客户自有主机上构建法律与资金安全的多商户市场：Pix 分账至卖家子账户，平台仅收佣金，并设置冻结期与人工审核。",
+      "solution": "配置 WordPress + WooCommerce + Dokan/WCFM、聊天、审核流程与分账网关，强调信任与效率。",
+      "results": "具备安全资金流、卖家工具与争议运营规则的市场基础。",
+      "highlights": [
+        "多商户后台与站内聊天",
+        "Pix 原生分账至卖家子账户",
+        "退款/争议余额冻结规则",
+        "新上架人工审核"
+      ]
+    }
+  }
+}

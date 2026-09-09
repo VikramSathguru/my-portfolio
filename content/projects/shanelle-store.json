@@ -1,0 +1,149 @@
+{
+  "id": "shanelle-store",
+  "slug": "shanelle-store",
+  "featured": true,
+  "order": 2,
+  "categories": ["ecommerce", "mobile", "uiux", "web"],
+  "cover": "/portfolio/shanelle-store/landing.png",
+  "tech": ["WooCommerce", "WordPress", "Hostinger", "Stripe", "PayPal", "iOS", "Android", "REST API", "Responsive Design"],
+  "metrics": [
+    {
+      "value": "Web+Apps",
+      "label": {
+        "en": "Unified commerce ecosystem",
+        "pt": "Ecossistema de comércio unificado",
+        "es": "Ecosistema de comercio unificado",
+        "ja": "統合コマースエコシステム",
+        "zh": "统一商务生态系统"
+      }
+    },
+    {
+      "value": "LATAM",
+      "label": {
+        "en": "Regional payment readiness",
+        "pt": "Pagamentos regionais prontos",
+        "es": "Pagos regionales listos",
+        "ja": "地域決済対応",
+        "zh": "区域支付就绪"
+      }
+    },
+    {
+      "value": "Docs",
+      "label": {
+        "en": "Handoff & autonomy package",
+        "pt": "Pacote de transferência e autonomia",
+        "es": "Paquete de traspaso y autonomía",
+        "ja": "引き継ぎと自律運用パッケージ",
+        "zh": "交接与自主运营包"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/portfolio/shanelle-store/landing.png",
+      "alt": {
+        "en": "ShanelleStore landing page",
+        "pt": "Landing page da ShanelleStore",
+        "es": "Landing page de ShanelleStore",
+        "ja": "ShanelleStore ランディング",
+        "zh": "ShanelleStore 落地页"
+      },
+      "label": {
+        "en": "Landing",
+        "pt": "Landing",
+        "es": "Landing",
+        "ja": "ランディング",
+        "zh": "落地页"
+      }
+    },
+    {
+      "src": "/portfolio/shanelle-store/shop.png",
+      "alt": {
+        "en": "ShanelleStore shop page",
+        "pt": "Página da loja ShanelleStore",
+        "es": "Página de tienda ShanelleStore",
+        "ja": "ShanelleStore ショップページ",
+        "zh": "ShanelleStore 商店页"
+      },
+      "label": {
+        "en": "Store",
+        "pt": "Loja",
+        "es": "Tienda",
+        "ja": "ストア",
+        "zh": "商店"
+      }
+    }
+  ],
+  "content": {
+    "en": {
+      "title": "ShanelleStore",
+      "summary": "Minimalist fashion commerce with synchronized mobile apps, LATAM payment gateways, and owner-ready documentation.",
+      "role": "E-commerce systems · Mobile sync · Payments · Knowledge transfer",
+      "challenge": "Create a clean WooCommerce storefront plus iOS/Android apps sharing one inventory, with Mexico/Central America payment methods and full handoff documentation so the owner can operate independently on Hostinger.",
+      "solution": "Built a minimal product-grid-first UX, synced catalog architecture for web/apps, and payment integrations suitable for LATAM (Stripe/PayPal/regional options). Delivered transfer docs so inventory and design tweaks don’t require a developer.",
+      "results": "A cohesive brand ecosystem — web + apps + payments + autonomy — designed for long-term operation without vendor lock-in on commissions.",
+      "highlights": [
+        "Minimalist product-grid commerce UI",
+        "Web ↔ mobile catalog synchronization",
+        "LATAM card & local payment pathways",
+        "Step-by-step handoff documentation for autonomy"
+      ]
+    },
+    "pt": {
+      "title": "ShanelleStore",
+      "summary": "Comércio de moda minimalista com apps móveis sincronizados, pagamentos LATAM e documentação para autonomia da dona.",
+      "role": "Sistemas de e-commerce · Sync mobile · Pagamentos · Transferência de conhecimento",
+      "challenge": "Criar loja WooCommerce limpa + apps iOS/Android com o mesmo inventário, pagamentos para México/América Central e documentação completa para operação independente na Hostinger.",
+      "solution": "UX minimalista focada em grade de produtos, arquitetura de catálogo sincronizada e integrações de pagamento para LATAM. Entreguei documentação para autonomia em estoque e ajustes de design.",
+      "results": "Ecossistema coeso — web + apps + pagamentos + autonomia — sem lock-in de comissão de vendas.",
+      "highlights": [
+        "UI minimalista centrada em grade de produtos",
+        "Sincronização de catálogo web ↔ mobile",
+        "Pagamentos com cartão e métodos locais LATAM",
+        "Documentação passo a passo para autonomia"
+      ]
+    },
+    "es": {
+      "title": "ShanelleStore",
+      "summary": "Comercio de moda minimalista con apps móviles sincronizadas, pagos LATAM y documentación para autonomía.",
+      "role": "Sistemas e-commerce · Sync móvil · Pagos · Transferencia de conocimiento",
+      "challenge": "Crear tienda WooCommerce limpia + apps iOS/Android con el mismo inventario, pagos para México/Centroamérica y documentación completa para operar en Hostinger.",
+      "solution": "UX minimalista centrada en grillas de producto, catálogo sincronizado y pasarelas LATAM. Entregué documentación para autonomía en inventario y diseño.",
+      "results": "Ecosistema cohesionado — web + apps + pagos + autonomía — sin comisión de plataforma.",
+      "highlights": [
+        "UI minimalista de grilla de productos",
+        "Sincronización de catálogo web ↔ móvil",
+        "Pagos con tarjeta y métodos locales LATAM",
+        "Documentación paso a paso para autonomía"
+      ]
+    },
+    "ja": {
+      "title": "ShanelleStore",
+      "summary": "同期モバイルアプリ、LATAM決済、オーナー自律運用ドキュメント付きのミニマルファッションコマース。",
+      "role": "ECシステム · モバイル同期 · 決済 · ナレッジ移管",
+      "challenge": "Hostinger上で、同一在庫のWooCommerce＋iOS/Android、メキシコ/中米決済、完全な引き継ぎ資料を実現すること。",
+      "solution": "商品グリッド重視のミニマルUX、Web/アプリ同期カタログ、LATAM向け決済、自律運用ドキュメントを構築。",
+      "results": "Web＋アプリ＋決済＋自律運用が揃った、長期運用可能なブランド基盤。",
+      "highlights": [
+        "ミニマルな商品グリッドUI",
+        "Web ↔ モバイルのカタログ同期",
+        "LATAM向けカード/現地決済",
+        "自律運用のためのステップガイド"
+      ]
+    },
+    "zh": {
+      "title": "ShanelleStore",
+      "summary": "极简时尚电商：同步移动应用、拉美支付与可自主运营的交接文档。",
+      "role": "电商系统 · 移动同步 · 支付 · 知识交接",
+      "challenge": "在 Hostinger 上打造干净的 WooCommerce 店面与共享库存的 iOS/Android 应用，支持墨西哥/中美洲支付，并提供完整交接文档。",
+      "solution": "以商品网格为核心的极简 UX、Web/App 同步目录架构，以及适合拉美的支付集成，并交付自主运营文档。",
+      "results": "Web + App + 支付 + 自主权一体的品牌生态，避免销售佣金锁定。",
+      "highlights": [
+        "极简商品网格商业 UI",
+        "Web ↔ 移动目录同步",
+        "拉美卡支付与本地支付路径",
+        "逐步交接文档以支持自主运营"
+      ]
+    }
+  }
+}

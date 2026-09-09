@@ -1,0 +1,161 @@
+{
+  "Meta": {
+    "title": "Vikram Sathguru — 高级全栈开发工程师",
+    "description": "拥有10年以上经验的高级全栈开发工程师，专注于可扩展的 Web 平台、电商、CRM 与 AI 自动化。PolarSync · NUS。"
+  },
+  "Nav": {
+    "portfolio": "作品集",
+    "about": "关于我",
+    "contact": "联系我们",
+    "openMenu": "打开菜单",
+    "home": "Vikram Sathguru — 首页",
+    "language": "语言"
+  },
+  "Hero": {
+    "role": "高级全栈开发工程师",
+    "company": "PolarSync",
+    "headline": "以卓越性能交付高质量软件。",
+    "tagline": "我设计并开发可扩展的 Web 平台、电商解决方案、CRM 系统与 AI 自动化，持续创造业务价值。",
+    "ctaTalk": "开始沟通",
+    "ctaPortfolio": "查看作品",
+    "bannerAlt": "Vikram Sathguru 作品集横幅"
+  },
+  "Portfolio": {
+    "eyebrow": "作品集",
+    "title": "精选作品",
+    "description": "精选作品：时尚电商、拉美零售应用、多商户市场与全栈 CRM 系统。",
+    "empty": "该分类下暂无项目。",
+    "filters": {
+      "all": "全部",
+      "web": "Web 开发",
+      "mobile": "移动应用",
+      "uiux": "UI/UX 设计",
+      "ecommerce": "电商",
+      "ai": "AI 与自动化"
+    }
+  },
+  "Expertise": {
+    "eyebrow": "技术能力",
+    "title": "全栈专业能力",
+    "description": "从前端到后端、电商、CRM 与 AI 自动化 — 以可靠性与可扩展性为核心。",
+    "areas": {
+      "frontend": {
+        "title": "前端",
+        "description": "基于现代 React 架构的响应式、直观界面。"
+      },
+      "backend": {
+        "title": "后端",
+        "description": "支撑 SaaS、市场平台与业务自动化的 API 与服务。"
+      },
+      "database": {
+        "title": "数据库",
+        "description": "可靠的数据模型、迁移与多数据库架构。"
+      },
+      "ecommerce": {
+        "title": "电商",
+        "description": "从目录、结账到订单管理的完整电商运营。"
+      },
+      "ai": {
+        "title": "AI 与自动化",
+        "description": "减少手工劳动、提升支持效率的智能助手与自动化。"
+      },
+      "business": {
+        "title": "业务系统",
+        "description": "CRM、营销集成与保障团队高效运转的自动化。"
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "关于我",
+    "title": "上线后仍持续创造价值的系统",
+    "p1": "拥有10年以上经验的高级全栈开发工程师，专注于可扩展 Web 平台、业务管理系统、电商解决方案与自动化工具的设计与开发。",
+    "p2": "擅长使用 React、Next.js、Node.js、Python、PostgreSQL、MySQL 与现代云技术构建可靠数字产品。经验涵盖定制 CRM、API 集成、客户管理、营销自动化与 AI 应用。",
+    "p3": "曾与国际公司与远程团队合作，交付提升运营效率、自动化流程并改善客户体验的解决方案。我的方法结合清晰架构、直观体验、安全集成与长期可扩展性。",
+    "stats": {
+      "years": "年经验",
+      "education": "计算机科学硕士与学士",
+      "reach": "远程与国际团队"
+    },
+    "experienceEyebrow": "工作经历",
+    "jobTitle": "高级全栈开发工程师",
+    "company": "PolarSync",
+    "highlights": {
+      "h1": "使用 React、Next.js、Node.js、TypeScript、Python 与 PostgreSQL 设计并开发可扩展 Web 平台、SaaS、市场与业务自动化系统。",
+      "h2": "构建用于客户管理、数据组织、工作流自动化与流程优化的定制 CRM。",
+      "h3": "开发可自动化客户沟通并生成个性化回复的 AI 聊天机器人。",
+      "h4": "交付具备用户管理、支付集成、产品目录与可扩展后端的市场平台。",
+      "h5": "使用 PostgreSQL、MySQL 与 MongoDB 为大规模客户数据集设计数据库结构与迁移流程。"
+    },
+    "processEyebrow": "工作方式",
+    "process": {
+      "01": {
+        "title": "想法",
+        "text": "在动手前明确目标、用户与约束。"
+      },
+      "02": {
+        "title": "设计",
+        "text": "打造直观、可信且可扩展的架构与体验。"
+      },
+      "03": {
+        "title": "开发",
+        "text": "用 React、Next.js、Node.js 与清晰 API 交付可靠系统。"
+      },
+      "04": {
+        "title": "真实影响",
+        "text": "上线能提升效率、并持续创造价值的解决方案。"
+      }
+    },
+    "educationEyebrow": "教育背景",
+    "masters": "计算机科学硕士",
+    "bachelors": "计算机科学学士",
+    "school": "新加坡国立大学（NUS）",
+    "mastersPeriod": "2017年8月 – 2019年6月",
+    "bachelorsPeriod": "2013年8月 – 2017年6月",
+    "singapore": "新加坡",
+    "location": "新加坡 · 支持远程"
+  },
+  "Contact": {
+    "eyebrow": "联系",
+    "title": "一起讨论你的项目",
+    "description": "告诉我你的 Web 平台、电商店铺、CRM 或自动化想法 — 我会帮你把它做成持续创造价值的产品。",
+    "email": "邮箱",
+    "phone": "电话",
+    "location": "地点",
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "emailLabel": "邮箱地址",
+    "emailPlaceholder": "you@company.com",
+    "phoneLabel": "电话号码",
+    "phonePlaceholder": "+86 ...",
+    "message": "项目详情",
+    "messagePlaceholder": "请分享目标、时间表与技术栈偏好...",
+    "submit": "发送消息",
+    "sent": "正在打开邮件客户端… 如未打开，请写邮件至",
+    "mailSubject": "来自 {name} 的作品集咨询"
+  },
+  "Footer": {
+    "blurb": "专注可扩展 Web、电商、CRM 与 AI 自动化的高级全栈开发工程师。",
+    "navigate": "导航",
+    "connect": "社交",
+    "contact": "联系",
+    "rights": "保留所有权利。",
+    "backToTop": "回到顶部"
+  },
+  "Featured": {
+    "eyebrow": "精选案例",
+    "title": "用作品证明专业",
+    "description": "我交付的真实产品 — 电商平台、多商户市场与 CRM 系统 — 含界面截图、架构决策与成果。",
+    "viewCase": "查看案例"
+  },
+  "CaseStudy": {
+    "challenge": "挑战",
+    "solution": "方案",
+    "results": "结果",
+    "highlights": "交付内容",
+    "tech": "技术栈与系统",
+    "gallery": "产品界面",
+    "cmsNote": "作为 CMS 媒体资产管理的界面 — 每个项目的落地页、商店页与管理端。",
+    "cta": "开始类似项目",
+    "back": "返回作品集"
+  }
+}
