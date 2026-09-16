@@ -6,24 +6,54 @@
   "Nav": {
     "portfolio": "Portfólio",
     "about": "Sobre mim",
-    "contact": "Fale conosco",
     "openMenu": "Abrir menu",
     "home": "Vikram Sathguru — início",
-    "language": "Idioma"
+    "language": "Idioma",
+    "skills": "Skills",
+    "viewWork": "Ver trabalhos"
+  },
+  "Search": {
+    "label": "Buscar portfólio",
+    "placeholder": "Buscar…",
+    "searching": "Buscando…",
+    "empty": "Nenhum resultado"
   },
   "Hero": {
-    "role": "Desenvolvedor Full Stack Sênior",
-    "company": "PolarSync",
-    "headline": "Entregando software de qualidade com desempenho incomparável.",
-    "tagline": "Eu projeto e desenvolvo plataformas web escaláveis, soluções de e-commerce, sistemas CRM e automação com IA que geram valor duradouro.",
-    "ctaTalk": "Vamos conversar",
-    "ctaPortfolio": "Ver portfólio",
-    "bannerAlt": "Banner do portfólio de Vikram Sathguru"
+    "ctaPortfolio": "Ver cases",
+    "ctaSkills": "Ver skills",
+    "carouselLabel": "Slides do hero",
+    "slideControl": "Mostrar slide {n}",
+    "hotspotPortfolio": "Ir para o portfólio",
+    "hotspotSkills": "Ir para skills",
+    "hotspotAbout": "Ir para sobre mim",
+    "hotspotEcommerce": "Ver trabalhos de e-commerce",
+    "hotspotUiux": "Ver trabalhos de UI/UX",
+    "hotspotWeb": "Ver trabalhos web e app",
+    "hotspotMobile": "Ver trabalhos mobile",
+    "slides": {
+      "craft": {
+        "eyebrow": "Desenvolvedor Full Stack Sênior · PolarSync",
+        "headline": "Eu entrego sistemas de comércio e CRM que o cliente consegue operar.",
+        "tagline": "De vitrines de moda e apps LATAM a marketplaces com split Pix e CRMs modulares — feitos para conversão, operação e autonomia.",
+        "imageAlt": "Banner do portfólio de Vikram Sathguru",
+        "clickHint": "Abrir cases em destaque"
+      },
+      "bio": {
+        "eyebrow": "Bio profissional · NUS",
+        "headline": "Da Ciência da Computação na NUS à entrega em produção.",
+        "tagline": "Um resumo da minha formação e de como ela molda os produtos que construo para clientes.",
+        "pointNus": "Formado na National University of Singapore (NUS) em Ciência da Computação — Bacharelado (2013–2017) e Mestrado (2017–2019).",
+        "pointPhd": "Recebi meu PhD em Ciência da Computação pela National University of Singapore.",
+        "pointRole": "Hoje Senior Full Stack Developer na PolarSync — comércio, marketplaces, CRM e automação com IA.",
+        "imageAlt": "Vikram Sathguru na formatura da NUS",
+        "clickHint": "Ler a seção sobre mim"
+      }
+    }
   },
   "Portfolio": {
-    "eyebrow": "Portfólio",
-    "title": "Nosso trabalho",
-    "description": "Trabalhos selecionados em comércio de moda, apps LATAM, marketplaces multi-vendedor e sistemas CRM full-stack.",
+    "eyebrow": "Trabalho selecionado",
+    "title": "Cases, não só capturas de tela",
+    "description": "Quatro entregas reais: e-commerce AI-first, varejo LATAM + apps, marketplace multi-vendedor com Pix e shell CRM full-stack.",
     "empty": "Ainda não há projetos nesta categoria.",
     "filters": {
       "all": "Todos",
@@ -35,9 +65,9 @@
     }
   },
   "Expertise": {
-    "eyebrow": "Habilidades técnicas",
-    "title": "Expertise em toda a stack",
-    "description": "Do frontend aos sistemas backend, e-commerce, CRM e automação com IA — feitos para confiabilidade e escala.",
+    "eyebrow": "Skills e stack",
+    "title": "O que eu levo para um projeto",
+    "description": "Proficiência principal onde importa, mais um stack técnico claro em frontend, backend, dados, comércio e automação.",
     "areas": {
       "frontend": {
         "title": "Frontend",
@@ -63,18 +93,22 @@
         "title": "Sistemas de negócios",
         "description": "CRMs, integrações de marketing e automação operacional."
       }
-    }
+    },
+    "coreTitle": "Skills principais",
+    "coreDescription": "Níveis de domínio das ferramentas que mais uso em projetos de clientes.",
+    "stackTitle": "Stack técnico",
+    "stackDescription": "Tecnologias por domínio — como o sistema é construído, separado das barras de proficiência acima."
   },
   "About": {
     "eyebrow": "Sobre mim",
-    "title": "Sistemas que continuam gerando valor após o lançamento",
+    "title": "Feito para operadores, não só para demos",
     "p1": "Desenvolvedor Full Stack Sênior com mais de 10 anos de experiência projetando e desenvolvendo plataformas web escaláveis, sistemas de gestão, e-commerce e ferramentas de automação.",
     "p2": "Especializo-me em produtos digitais confiáveis com React, Next.js, Node.js, Python, PostgreSQL, MySQL e cloud. Minha experiência inclui CRMs personalizados, integrações de API, gestão de clientes, automação de marketing e aplicações com IA.",
     "p3": "Trabalhei com empresas internacionais e times remotos, entregando soluções que melhoram eficiência, automatizam processos e criam melhores experiências. Minha abordagem une arquitetura limpa, UX intuitiva, integrações seguras e escalabilidade de longo prazo.",
     "stats": {
-      "years": "Anos de experiência",
-      "education": "Mestrado e Bacharelado em Ciência da Computação",
-      "reach": "Times remotos e internacionais"
+      "years": "Anos entregando produtos",
+      "education": "Mestrado e Bacharelado, NUS",
+      "reach": "Sistemas de clientes em destaque"
     },
     "experienceEyebrow": "Experiência profissional",
     "jobTitle": "Desenvolvedor Full Stack Sênior",
@@ -112,40 +146,19 @@
     "mastersPeriod": "Ago 2017 – Jun 2019",
     "bachelorsPeriod": "Ago 2013 – Jun 2017",
     "singapore": "Singapura",
-    "location": "Singapura · Remoto"
-  },
-  "Contact": {
-    "eyebrow": "Contato",
-    "title": "Vamos falar do seu projeto",
-    "description": "Conte-me sobre sua plataforma web, loja, CRM ou ideia de automação — eu ajudo a transformá-la em um produto que gera valor.",
-    "email": "E-mail",
-    "phone": "Telefone",
-    "location": "Localização",
-    "name": "Nome completo",
-    "namePlaceholder": "Seu nome",
-    "emailLabel": "E-mail",
-    "emailPlaceholder": "voce@empresa.com",
-    "phoneLabel": "Telefone",
-    "phonePlaceholder": "+55 ...",
-    "message": "Detalhes do projeto",
-    "messagePlaceholder": "Compartilhe objetivos, prazo e preferências de stack...",
-    "submit": "Enviar mensagem",
-    "sent": "Abrindo seu cliente de e-mail… Se nada abrir, escreva para",
-    "mailSubject": "Contato do portfólio de {name}"
+    "location": "Singapura · Remoto no mundo todo"
   },
   "Footer": {
-    "blurb": "Desenvolvedor Full Stack Sênior criando plataformas web escaláveis, e-commerce, CRM e automação com IA.",
+    "blurb": "Desenvolvedor Full Stack Sênior — e-commerce, marketplaces, CRM e automação com IA com handoff pronto para operação.",
     "navigate": "Navegar",
-    "connect": "Conectar",
-    "contact": "Contato",
     "rights": "Todos os direitos reservados.",
     "backToTop": "Voltar ao topo"
   },
   "Featured": {
-    "eyebrow": "Cases em destaque",
-    "title": "Trabalho que prova o ofício",
-    "description": "Produtos reais que entreguei — plataformas de comércio, marketplaces multi-vendedor e sistemas CRM — com telas, decisões de arquitetura e resultados.",
-    "viewCase": "Ver case"
+    "eyebrow": "Prova de ofício",
+    "title": "Sistemas em destaque que projetei e entreguei",
+    "description": "Abra um case para ver o problema de negócio, arquitetura, telas do produto e o que o cliente opera após o lançamento.",
+    "viewCase": "Abrir case completo"
   },
   "CaseStudy": {
     "challenge": "Desafio",
@@ -155,7 +168,6 @@
     "tech": "Stack e sistemas",
     "gallery": "Superfícies do produto",
     "cmsNote": "Telas geridas como mídia de CMS — landing, loja e admin de cada projeto.",
-    "cta": "Iniciar um projeto semelhante",
     "back": "Voltar ao portfólio"
   }
 }

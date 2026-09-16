@@ -6,24 +6,54 @@
   "Nav": {
     "portfolio": "作品集",
     "about": "关于我",
-    "contact": "联系我们",
     "openMenu": "打开菜单",
     "home": "Vikram Sathguru — 首页",
-    "language": "语言"
+    "language": "语言",
+    "skills": "技能",
+    "viewWork": "查看作品"
+  },
+  "Search": {
+    "label": "搜索作品集",
+    "placeholder": "搜索…",
+    "searching": "搜索中…",
+    "empty": "无结果"
   },
   "Hero": {
-    "role": "高级全栈开发工程师",
-    "company": "PolarSync",
-    "headline": "以卓越性能交付高质量软件。",
-    "tagline": "我设计并开发可扩展的 Web 平台、电商解决方案、CRM 系统与 AI 自动化，持续创造业务价值。",
-    "ctaTalk": "开始沟通",
-    "ctaPortfolio": "查看作品",
-    "bannerAlt": "Vikram Sathguru 作品集横幅"
+    "ctaPortfolio": "查看案例",
+    "ctaSkills": "查看技能",
+    "carouselLabel": "首页轮播",
+    "slideControl": "显示第 {n} 张",
+    "hotspotPortfolio": "前往作品集",
+    "hotspotSkills": "前往技能",
+    "hotspotAbout": "前往关于我",
+    "hotspotEcommerce": "查看电商作品",
+    "hotspotUiux": "查看 UI/UX 作品",
+    "hotspotWeb": "查看 Web 与应用作品",
+    "hotspotMobile": "查看移动端作品",
+    "slides": {
+      "craft": {
+        "eyebrow": "高级全栈开发工程师 · PolarSync",
+        "headline": "交付客户真正能运营的电商与 CRM 系统。",
+        "tagline": "从时尚店面、拉美零售应用，到 Pix 分账多商户市场与模块化 CRM — 为转化、运营与长期自主权而设计。",
+        "imageAlt": "Vikram Sathguru 作品集横幅",
+        "clickHint": "打开精选案例"
+      },
+      "bio": {
+        "eyebrow": "职业简介 · NUS",
+        "headline": "从 NUS 计算机科学到可上线交付的系统。",
+        "tagline": "简要介绍我的学术路径，以及它如何影响我为客户构建的产品。",
+        "pointNus": "毕业于新加坡国立大学（NUS）计算机科学 — 学士（2013–2017）、硕士（2017–2019）。",
+        "pointPhd": "于新加坡国立大学（NUS）获得计算机科学博士学位。",
+        "pointRole": "现任 PolarSync 高级全栈开发工程师 — 电商、多商户市场、CRM 与 AI 自动化。",
+        "imageAlt": "Vikram Sathguru 在 NUS 毕业典礼",
+        "clickHint": "阅读关于我"
+      }
+    }
   },
   "Portfolio": {
-    "eyebrow": "作品集",
-    "title": "精选作品",
-    "description": "精选作品：时尚电商、拉美零售应用、多商户市场与全栈 CRM 系统。",
+    "eyebrow": "精选作品",
+    "title": "案例，而不只是截图",
+    "description": "四项真实交付：AI 优先时尚电商、拉美零售+应用、Pix 多商户市场，以及全栈 CRM 壳层。",
     "empty": "该分类下暂无项目。",
     "filters": {
       "all": "全部",
@@ -35,9 +65,9 @@
     }
   },
   "Expertise": {
-    "eyebrow": "技术能力",
-    "title": "全栈专业能力",
-    "description": "从前端到后端、电商、CRM 与 AI 自动化 — 以可靠性与可扩展性为核心。",
+    "eyebrow": "技能与技术栈",
+    "title": "我能为项目带来什么",
+    "description": "关键核心熟练度，以及按前端、后端、数据、电商与自动化整理的技术栈。",
     "areas": {
       "frontend": {
         "title": "前端",
@@ -63,18 +93,22 @@
         "title": "业务系统",
         "description": "CRM、营销集成与保障团队高效运转的自动化。"
       }
-    }
+    },
+    "coreTitle": "核心技能",
+    "coreDescription": "我在客户项目中最常用工具的熟练度。",
+    "stackTitle": "技术栈",
+    "stackDescription": "按领域整理的技术清单 — 展示系统如何构成，与上方熟练度条分开。"
   },
   "About": {
     "eyebrow": "关于我",
-    "title": "上线后仍持续创造价值的系统",
+    "title": "为运营者而建，而不只是演示",
     "p1": "拥有10年以上经验的高级全栈开发工程师，专注于可扩展 Web 平台、业务管理系统、电商解决方案与自动化工具的设计与开发。",
     "p2": "擅长使用 React、Next.js、Node.js、Python、PostgreSQL、MySQL 与现代云技术构建可靠数字产品。经验涵盖定制 CRM、API 集成、客户管理、营销自动化与 AI 应用。",
     "p3": "曾与国际公司与远程团队合作，交付提升运营效率、自动化流程并改善客户体验的解决方案。我的方法结合清晰架构、直观体验、安全集成与长期可扩展性。",
     "stats": {
-      "years": "年经验",
-      "education": "计算机科学硕士与学士",
-      "reach": "远程与国际团队"
+      "years": "产品交付年限",
+      "education": "NUS 计算机科学硕/学士",
+      "reach": "精选客户系统"
     },
     "experienceEyebrow": "工作经历",
     "jobTitle": "高级全栈开发工程师",
@@ -112,40 +146,19 @@
     "mastersPeriod": "2017年8月 – 2019年6月",
     "bachelorsPeriod": "2013年8月 – 2017年6月",
     "singapore": "新加坡",
-    "location": "新加坡 · 支持远程"
-  },
-  "Contact": {
-    "eyebrow": "联系",
-    "title": "一起讨论你的项目",
-    "description": "告诉我你的 Web 平台、电商店铺、CRM 或自动化想法 — 我会帮你把它做成持续创造价值的产品。",
-    "email": "邮箱",
-    "phone": "电话",
-    "location": "地点",
-    "name": "姓名",
-    "namePlaceholder": "您的姓名",
-    "emailLabel": "邮箱地址",
-    "emailPlaceholder": "you@company.com",
-    "phoneLabel": "电话号码",
-    "phonePlaceholder": "+86 ...",
-    "message": "项目详情",
-    "messagePlaceholder": "请分享目标、时间表与技术栈偏好...",
-    "submit": "发送消息",
-    "sent": "正在打开邮件客户端… 如未打开，请写邮件至",
-    "mailSubject": "来自 {name} 的作品集咨询"
+    "location": "新加坡 · 全球远程"
   },
   "Footer": {
-    "blurb": "专注可扩展 Web、电商、CRM 与 AI 自动化的高级全栈开发工程师。",
+    "blurb": "高级全栈开发者 — 电商、多商户市场、CRM 与 AI 自动化，交付可运营的交接。",
     "navigate": "导航",
-    "connect": "社交",
-    "contact": "联系",
     "rights": "保留所有权利。",
     "backToTop": "回到顶部"
   },
   "Featured": {
-    "eyebrow": "精选案例",
-    "title": "用作品证明专业",
-    "description": "我交付的真实产品 — 电商平台、多商户市场与 CRM 系统 — 含界面截图、架构决策与成果。",
-    "viewCase": "查看案例"
+    "eyebrow": "专业证明",
+    "title": "我设计并交付的精选系统",
+    "description": "打开案例可查看业务问题、架构选择、产品界面，以及上线后客户如何运营。",
+    "viewCase": "打开完整案例"
   },
   "CaseStudy": {
     "challenge": "挑战",
@@ -155,7 +168,6 @@
     "tech": "技术栈与系统",
     "gallery": "产品界面",
     "cmsNote": "作为 CMS 媒体资产管理的界面 — 每个项目的落地页、商店页与管理端。",
-    "cta": "开始类似项目",
     "back": "返回作品集"
   }
 }

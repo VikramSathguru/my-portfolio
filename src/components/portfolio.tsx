@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import { useMemo, useState, useDeferredValue } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { m, AnimatePresence } from "@/components/motion";
+import { ProjectCoverTransition } from "@/components/project-cover-transition";
 import { portfolioFilterKeys, type PortfolioFilterKey } from "@/data/portfolio";
 import type { AppLocale } from "@/i18n/routing";
 import type { CmsProject } from "@/lib/cms/types";
@@ -63,7 +64,7 @@ export function Portfolio({ projects }: { projects: CmsProject[] }) {
             {filtered.map((project) => {
               const content = localizeProject(project, locale);
               return (
-                <motion.article
+                <m.article
                   key={project.id}
                   layout
                   initial={{ opacity: 0, y: 18 }}
@@ -72,16 +73,23 @@ export function Portfolio({ projects }: { projects: CmsProject[] }) {
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                   className="group overflow-hidden rounded-3xl bg-[var(--background)] shadow-[0_18px_50px_-36px_rgba(15,40,80,0.55)] ring-1 ring-[var(--border)]"
                 >
-                  <Link href={`/work/${project.slug}`} className="block">
-                    <div className="relative aspect-[16/10] overflow-hidden bg-[var(--surface)]">
-                      <Image
-                        src={project.cover}
-                        alt={content.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
-                      />
-                    </div>
+                  <Link
+                    href={`/work/${project.slug}`}
+                    transitionTypes={["nav-forward"]}
+                    className="block"
+                  >
+                    <ProjectCoverTransition slug={project.slug}>
+                      <div className="relative aspect-[16/10] overflow-hidden bg-[var(--surface)]">
+                        <Image
+                          src={project.cover}
+                          alt={content.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          quality={75}
+                          className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
+                        />
+                      </div>
+                    </ProjectCoverTransition>
 
                     <div className="flex items-end justify-between gap-4 p-6 sm:p-7">
                       <div className="min-w-0">
@@ -114,7 +122,7 @@ export function Portfolio({ projects }: { projects: CmsProject[] }) {
                       </span>
                     </div>
                   </Link>
-                </motion.article>
+                </m.article>
               );
             })}
           </AnimatePresence>

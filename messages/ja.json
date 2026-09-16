@@ -6,24 +6,54 @@
   "Nav": {
     "portfolio": "ポートフォリオ",
     "about": "自己紹介",
-    "contact": "お問い合わせ",
     "openMenu": "メニューを開く",
     "home": "Vikram Sathguru — ホーム",
-    "language": "言語"
+    "language": "言語",
+    "skills": "スキル",
+    "viewWork": "実績を見る"
+  },
+  "Search": {
+    "label": "ポートフォリオを検索",
+    "placeholder": "検索…",
+    "searching": "検索中…",
+    "empty": "該当なし"
   },
   "Hero": {
-    "role": "シニアフルスタック開発者",
-    "company": "PolarSync",
-    "headline": "卓越したパフォーマンスで高品質なソフトウェアを届けます。",
-    "tagline": "持続的なビジネス価値を生む、スケーラブルなWebプラットフォーム、EC、CRM、AI自動化を設計・開発しています。",
-    "ctaTalk": "相談する",
-    "ctaPortfolio": "実績を見る",
-    "bannerAlt": "Vikram Sathguru ポートフォリオバナー"
+    "ctaPortfolio": "ケーススタディを見る",
+    "ctaSkills": "スキルを見る",
+    "carouselLabel": "ヒーロースライド",
+    "slideControl": "スライド {n} を表示",
+    "hotspotPortfolio": "ポートフォリオへ",
+    "hotspotSkills": "スキルへ",
+    "hotspotAbout": "自己紹介へ",
+    "hotspotEcommerce": "Eコマース実績へ",
+    "hotspotUiux": "UI/UX実績へ",
+    "hotspotWeb": "Web/アプリ実績へ",
+    "hotspotMobile": "モバイル実績へ",
+    "slides": {
+      "craft": {
+        "eyebrow": "シニアフルスタック開発者 · PolarSync",
+        "headline": "クライアントが運用できるコマースとCRMを届けます。",
+        "tagline": "ファッションEC、LATAM向けアプリ、Pixスプリット市場、モジュラーCRMまで — コンバージョンと運用、自律性を設計します。",
+        "imageAlt": "Vikram Sathguru ポートフォリオバナー",
+        "clickHint": "注目ケースを見る"
+      },
+      "bio": {
+        "eyebrow": "プロフィール · NUS",
+        "headline": "NUSのコンピュータサイエンスから、本番システムの提供へ。",
+        "tagline": "学歴の要点と、それがクライアント向けプロダクトにどう生きているかの短い紹介です。",
+        "pointNus": "シンガポール国立大学（NUS）でコンピュータサイエンスを修了 — 学士（2013–2017）、修士（2017–2019）。",
+        "pointPhd": "シンガポール国立大学（NUS）でコンピュータサイエンスのPhDを取得。",
+        "pointRole": "現在 PolarSync のシニアフルスタック開発者 — コマース、マーケットプレイス、CRM、AI自動化。",
+        "imageAlt": "NUS卒業式の Vikram Sathguru",
+        "clickHint": "自己紹介セクションを読む"
+      }
+    }
   },
   "Portfolio": {
-    "eyebrow": "ポートフォリオ",
-    "title": "実績紹介",
-    "description": "ファッションEC、LATAM向けアプリ、マルチベンダー市場、フルスタックCRMなどの厳選実績。",
+    "eyebrow": "厳選実績",
+    "title": "スクリーンショットではなくケーススタディ",
+    "description": "AIファーストEC、LATAM小売+アプリ、Pixマルチベンダー市場、フルスタックCRMの4案件。",
     "empty": "このカテゴリのプロジェクトはまだありません。",
     "filters": {
       "all": "すべて",
@@ -35,9 +65,9 @@
     }
   },
   "Expertise": {
-    "eyebrow": "技術スキル",
-    "title": "フルスタックの専門性",
-    "description": "フロントエンドからバックエンド、EC、CRM、AI自動化まで — 信頼性と拡張性を重視して構築します。",
+    "eyebrow": "スキルとスタック",
+    "title": "プロジェクトに持ち込む力",
+    "description": "実務で効くコア習熟度と、フロントエンド／バックエンド／データ／コマース／自動化に整理した技術スタック。",
     "areas": {
       "frontend": {
         "title": "フロントエンド",
@@ -63,18 +93,22 @@
         "title": "業務システム",
         "description": "CRM、マーケティング連携、運用を支える自動化。"
       }
-    }
+    },
+    "coreTitle": "コアスキル",
+    "coreDescription": "クライアント案件で最も使うツールの習熟度。",
+    "stackTitle": "技術スタック",
+    "stackDescription": "領域別に整理した技術 — 上の習熟度バーとは別に、システムの構成を示します。"
   },
   "About": {
     "eyebrow": "自己紹介",
-    "title": "ローンチ後も価値を生み続けるシステム",
+    "title": "デモではなく、運用者のために作る",
     "p1": "スケーラブルなWebプラットフォーム、業務管理システム、EC、自動化ツールの設計・開発に10年以上携わるシニアフルスタック開発者です。",
     "p2": "React、Next.js、Node.js、Python、PostgreSQL、MySQL、モダンなクラウド技術で信頼性の高いプロダクトを構築。カスタムCRM、API連携、顧客管理、マーケティング自動化、AIアプリの経験があります。",
     "p3": "国際企業やリモートチームと協力し、業務効率の向上、プロセス自動化、より良い顧客体験を届けてきました。クリーンな設計、直感的なUX、安全な連携、長期的な拡張性を重視します。",
     "stats": {
-      "years": "年の経験",
-      "education": "コンピュータサイエンス修士・学士",
-      "reach": "リモート・国際チーム"
+      "years": "プロダクト納品年数",
+      "education": "NUS コンピュータサイエンス修士・学士",
+      "reach": "注目のクライアントシステム"
     },
     "experienceEyebrow": "職務経歴",
     "jobTitle": "シニアフルスタック開発者",
@@ -112,40 +146,19 @@
     "mastersPeriod": "2017年8月 – 2019年6月",
     "bachelorsPeriod": "2013年8月 – 2017年6月",
     "singapore": "シンガポール",
-    "location": "シンガポール · リモート対応"
-  },
-  "Contact": {
-    "eyebrow": "お問い合わせ",
-    "title": "プロジェクトについて相談しましょう",
-    "description": "Webプラットフォーム、EC、CRM、自動化のアイデアをお聞かせください。価値を生み続けるプロダクトにします。",
-    "email": "メール",
-    "phone": "電話",
-    "location": "所在地",
-    "name": "お名前",
-    "namePlaceholder": "お名前",
-    "emailLabel": "メールアドレス",
-    "emailPlaceholder": "you@company.com",
-    "phoneLabel": "電話番号",
-    "phonePlaceholder": "+81 ...",
-    "message": "プロジェクト詳細",
-    "messagePlaceholder": "目標、スケジュール、希望技術スタックなどをご記入ください...",
-    "submit": "送信する",
-    "sent": "メールアプリを開いています… 開かない場合は次の宛先へ",
-    "mailSubject": "{name} 様からのポートフォリオ問い合わせ"
+    "location": "シンガポール · 世界中リモート対応"
   },
   "Footer": {
-    "blurb": "スケーラブルなWeb、EC、CRM、AI自動化を構築するシニアフルスタック開発者。",
+    "blurb": "シニアフルスタック開発者 — EC、マーケットプレイス、CRM、AI自動化。運用引き継ぎまで見据えた実装。",
     "navigate": "ナビ",
-    "connect": "つながる",
-    "contact": "連絡先",
-    "rights": "All rights reserved.",
+    "rights": "無断転載を禁じます。",
     "backToTop": "ページ上部へ"
   },
   "Featured": {
-    "eyebrow": "注目ケーススタディ",
-    "title": "実力を証明する実績",
-    "description": "実際に納品したプロダクト — EC、マルチベンダー市場、CRM — の画面、設計判断、成果を紹介します。",
-    "viewCase": "ケースを見る"
+    "eyebrow": "実力の証明",
+    "title": "設計・納品した注目システム",
+    "description": "ケースを開くと、課題・アーキテクチャ・画面・ローンチ後の運用まで確認できます。",
+    "viewCase": "ケースを開く"
   },
   "CaseStudy": {
     "challenge": "課題",
@@ -155,7 +168,6 @@
     "tech": "スタックとシステム",
     "gallery": "プロダクト画面",
     "cmsNote": "CMSメディアとして管理された画面 — 各案件のランディング、ストア、管理画面。",
-    "cta": "同様のプロジェクトを相談",
     "back": "ポートフォリオへ戻る"
   }
 }

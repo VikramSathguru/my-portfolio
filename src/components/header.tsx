@@ -5,9 +5,11 @@ import { useTranslations } from "next-intl";
 import { BrandLogo } from "./brand-logo";
 import { ThemeToggle } from "./theme-toggle";
 import { LanguageSwitcher } from "./language-switcher";
+import { SiteSearch } from "./site-search";
 
 const navItems = [
   { href: "#portfolio", key: "portfolio" as const },
+  { href: "#expertise", key: "skills" as const },
   { href: "#about", key: "about" as const },
 ];
 
@@ -25,6 +27,7 @@ export function Header() {
 
   return (
     <header
+      style={{ viewTransitionName: "site-header" }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
           ? "border-b border-[var(--border)] bg-[color-mix(in_srgb,var(--background)_90%,transparent)] shadow-sm backdrop-blur-xl"
@@ -49,17 +52,19 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
+          <SiteSearch />
           <LanguageSwitcher />
           <ThemeToggle />
           <a
-            href="#contact"
+            href="#portfolio"
             className="inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white transition hover:brightness-110"
           >
-            {t("contact")}
+            {t("viewWork")}
           </a>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
+          <SiteSearch />
           <LanguageSwitcher />
           <ThemeToggle />
           <button
@@ -99,11 +104,11 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#portfolio"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white"
             >
-              {t("contact")}
+              {t("viewWork")}
             </a>
           </nav>
         </div>

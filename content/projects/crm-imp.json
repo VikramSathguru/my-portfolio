@@ -3,38 +3,60 @@
   "slug": "crm-imp",
   "featured": true,
   "order": 4,
-  "categories": ["web", "ai", "uiux"],
+  "categories": [
+    "web",
+    "ai",
+    "uiux"
+  ],
   "cover": "/portfolio/crm-imp/landing.png",
-  "tech": ["React", "Node.js", "Python", "PostgreSQL", "REST API", "AI Workflows", "Dashboard UX"],
+  "tech": [
+    "React",
+    "Node.js",
+    "Python",
+    "PostgreSQL",
+    "REST API",
+    "AI Workflows",
+    "Dashboard UX"
+  ],
   "metrics": [
     {
       "value": "6",
       "label": {
-        "en": "Integrated CRM modules",
-        "pt": "Módulos CRM integrados",
-        "es": "Módulos CRM integrados",
-        "ja": "統合CRMモジュール",
-        "zh": "集成 CRM 模块"
+        "en": "Modules in one product shell",
+        "pt": "Módulos em um único shell",
+        "es": "Módulos en un solo shell",
+        "ja": "1シェル内のモジュール数",
+        "zh": "同一壳层内的模块数"
       }
     },
     {
       "value": "AI",
       "label": {
-        "en": "Training & simulation layer",
-        "pt": "Camada de treino e simulação",
-        "es": "Capa de entrenamiento y simulación",
-        "ja": "トレーニング/シミュレーション層",
-        "zh": "训练与模拟层"
+        "en": "Training & simulation workflows",
+        "pt": "Fluxos de treino e simulação",
+        "es": "Flujos de entrenamiento y simulación",
+        "ja": "トレーニング/シミュレーション",
+        "zh": "培训与模拟工作流"
       }
     },
     {
-      "value": "Full-stack",
+      "value": "Dialer",
       "label": {
-        "en": "React · Node · Python",
-        "pt": "React · Node · Python",
-        "es": "React · Node · Python",
-        "ja": "React · Node · Python",
-        "zh": "React · Node · Python"
+        "en": "Campaigns, queues, quick actions",
+        "pt": "Campanhas, filas, ações rápidas",
+        "es": "Campañas, colas, acciones rápidas",
+        "ja": "キャンペーン・キュー・クイック操作",
+        "zh": "活动、队列与快捷操作"
+      }
+    },
+    {
+      "value": "React+",
+      "label": {
+        "en": "Node.js & Python services",
+        "pt": "Serviços Node.js e Python",
+        "es": "Servicios Node.js y Python",
+        "ja": "Node.js / Python サービス",
+        "zh": "Node.js 与 Python 服务"
       }
     }
   ],
@@ -81,7 +103,7 @@
       "role": "Full-stack development · Product UI · Module architecture",
       "challenge": "Turn a detailed functional specification into a robust web system — React frontend, Node.js + Python backend, database integrations — with clear navigation and business rules already defined.",
       "solution": "Implemented a modular CRM shell (AI training, automatic dialing, prospecting, webinar studio, trends radar, VSL) with consistent dark-mode dashboard UX and API-backed workflows for lead growth teams.",
-      "results": "A cohesive operations platform where teams switch modules without leaving a unified product experience.",
+      "results": "One CRM workspace for lead growth: teams jump between AI training, dialer, prospecting, webinars, trends, and VSL without losing context or UI consistency.",
       "highlights": [
         "Modular dashboard for lead-growth workflows",
         "AI training & simulation capabilities",
@@ -95,7 +117,7 @@
       "role": "Desenvolvimento full-stack · UI de produto · Arquitetura de módulos",
       "challenge": "Transformar especificação funcional detalhada em sistema web robusto — React, Node.js + Python e banco — com navegação e regras de negócio já definidas.",
       "solution": "Implementei um shell modular de CRM (treino IA, discagem, prospecção, webinar, radar, VSL) com UX consistente em dark mode e fluxos via API.",
-      "results": "Plataforma operacional coesa em que times trocam de módulo sem sair da mesma experiência de produto.",
+      "results": "Um workspace CRM para crescimento de leads: o time alterna treino de IA, discador, prospecção, webinars, tendências e VSL sem perder contexto nem consistência de UI.",
       "highlights": [
         "Dashboard modular para crescimento de leads",
         "Capacitação e simulações com IA",
@@ -109,7 +131,7 @@
       "role": "Desarrollo full-stack · UI de producto · Arquitectura modular",
       "challenge": "Convertir una especificación funcional detallada en un sistema web robusto con React, Node.js + Python e integraciones de base de datos.",
       "solution": "Implementé un shell modular de CRM con UX dark-mode consistente y flujos respaldados por API.",
-      "results": "Una plataforma operativa unificada para equipos de crecimiento de leads.",
+      "results": "Un workspace CRM para crecimiento de leads: el equipo cambia entre IA, marcador, prospección, webinars, tendencias y VSL sin perder contexto ni consistencia de UI.",
       "highlights": [
         "Dashboard modular para crecimiento de leads",
         "Entrenamiento y simulaciones con IA",
@@ -123,7 +145,7 @@
       "role": "フルスタック開発 · プロダクトUI · モジュール設計",
       "challenge": "詳細仕様を React / Node.js / Python の堅牢なWebシステムへ実装すること。",
       "solution": "ダークモード統一UXのモジュール型CRMシェルとAPI連携ワークフローを実装。",
-      "results": "チームが同一プロダクト体験のままモジュールを切り替えられる運用基盤。",
+      "results": "リード成長のための一体型CRM：AI訓練、ダイヤル、見込み客、ウェビナー、トレンド、VSLを同一UIで切替。",
       "highlights": [
         "リード成長向けモジュラーダッシュボード",
         "AIトレーニング/シミュレーション",
@@ -137,7 +159,7 @@
       "role": "全栈开发 · 产品 UI · 模块架构",
       "challenge": "将详细功能规格落地为稳健的 Web 系统（React、Node.js + Python、数据库集成）。",
       "solution": "实现模块化 CRM 外壳与统一暗色仪表盘体验，以及面向增长团队的 API 工作流。",
-      "results": "团队可在统一产品体验内切换模块的运营平台。",
+      "results": "线索增长一体 CRM：团队可在 AI 培训、拨号、拓客、研讨会、趋势与 VSL 间切换，不丢上下文与界面一致性。",
       "highlights": [
         "面向线索增长的模块化仪表盘",
         "AI 培训与模拟能力",

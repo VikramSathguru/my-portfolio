@@ -3,9 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
-/myproject
+/my project
 /reference
-/public/portfolio
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -35,9 +34,15 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
+
+# Payload / local SQLite
+*.db
+*.db-*
+/media
 
 # typescript
 *.tsbuildinfo

@@ -3,38 +3,63 @@
   "slug": "shanelle-store",
   "featured": true,
   "order": 2,
-  "categories": ["ecommerce", "mobile", "uiux", "web"],
+  "categories": [
+    "ecommerce",
+    "mobile",
+    "uiux",
+    "web"
+  ],
   "cover": "/portfolio/shanelle-store/landing.png",
-  "tech": ["WooCommerce", "WordPress", "Hostinger", "Stripe", "PayPal", "iOS", "Android", "REST API", "Responsive Design"],
+  "tech": [
+    "WooCommerce",
+    "WordPress",
+    "Hostinger",
+    "Stripe",
+    "PayPal",
+    "iOS",
+    "Android",
+    "REST API",
+    "Responsive Design"
+  ],
   "metrics": [
     {
       "value": "Web+Apps",
       "label": {
-        "en": "Unified commerce ecosystem",
-        "pt": "Ecossistema de comércio unificado",
-        "es": "Ecosistema de comercio unificado",
-        "ja": "統合コマースエコシステム",
-        "zh": "统一商务生态系统"
+        "en": "One inventory, three surfaces",
+        "pt": "Um estoque, três superfícies",
+        "es": "Un inventario, tres superficies",
+        "ja": "1在庫・3サーフェス",
+        "zh": "一套库存，三个触点"
       }
     },
     {
       "value": "LATAM",
       "label": {
-        "en": "Regional payment readiness",
-        "pt": "Pagamentos regionais prontos",
-        "es": "Pagos regionales listos",
-        "ja": "地域決済対応",
-        "zh": "区域支付就绪"
+        "en": "MX & Central America payments",
+        "pt": "Pagamentos MX e América Central",
+        "es": "Pagos MX y Centroamérica",
+        "ja": "メキシコ/中米決済",
+        "zh": "墨西哥与中美洲支付"
+      }
+    },
+    {
+      "value": "Hostinger",
+      "label": {
+        "en": "No sales-commission hosting model",
+        "pt": "Hospedagem sem comissão sobre vendas",
+        "es": "Hosting sin comisión por ventas",
+        "ja": "売上手数料なしのホスティング",
+        "zh": "无销售抽成的托管模式"
       }
     },
     {
       "value": "Docs",
       "label": {
-        "en": "Handoff & autonomy package",
-        "pt": "Pacote de transferência e autonomia",
-        "es": "Paquete de traspaso y autonomía",
-        "ja": "引き継ぎと自律運用パッケージ",
-        "zh": "交接与自主运营包"
+        "en": "Owner autonomy after handoff",
+        "pt": "Autonomia da dona após handoff",
+        "es": "Autonomía de la dueña tras handoff",
+        "ja": "引き継ぎ後のオーナー自律",
+        "zh": "交接后店主可自主运营"
       }
     }
   ],
@@ -81,7 +106,7 @@
       "role": "E-commerce systems · Mobile sync · Payments · Knowledge transfer",
       "challenge": "Create a clean WooCommerce storefront plus iOS/Android apps sharing one inventory, with Mexico/Central America payment methods and full handoff documentation so the owner can operate independently on Hostinger.",
       "solution": "Built a minimal product-grid-first UX, synced catalog architecture for web/apps, and payment integrations suitable for LATAM (Stripe/PayPal/regional options). Delivered transfer docs so inventory and design tweaks don’t require a developer.",
-      "results": "A cohesive brand ecosystem — web + apps + payments + autonomy — designed for long-term operation without vendor lock-in on commissions.",
+      "results": "A minimal retail system the owner can run: synchronized catalog across web and mobile, regional payment readiness, and transfer docs that remove day-to-day developer dependency.",
       "highlights": [
         "Minimalist product-grid commerce UI",
         "Web ↔ mobile catalog synchronization",
@@ -95,7 +120,7 @@
       "role": "Sistemas de e-commerce · Sync mobile · Pagamentos · Transferência de conhecimento",
       "challenge": "Criar loja WooCommerce limpa + apps iOS/Android com o mesmo inventário, pagamentos para México/América Central e documentação completa para operação independente na Hostinger.",
       "solution": "UX minimalista focada em grade de produtos, arquitetura de catálogo sincronizada e integrações de pagamento para LATAM. Entreguei documentação para autonomia em estoque e ajustes de design.",
-      "results": "Ecossistema coeso — web + apps + pagamentos + autonomia — sem lock-in de comissão de vendas.",
+      "results": "Sistema de varejo minimalista que a dona opera: catálogo sincronizado web/mobile, pagamentos regionais e documentação que remove dependência diária do desenvolvedor.",
       "highlights": [
         "UI minimalista centrada em grade de produtos",
         "Sincronização de catálogo web ↔ mobile",
@@ -109,7 +134,7 @@
       "role": "Sistemas e-commerce · Sync móvil · Pagos · Transferencia de conocimiento",
       "challenge": "Crear tienda WooCommerce limpia + apps iOS/Android con el mismo inventario, pagos para México/Centroamérica y documentación completa para operar en Hostinger.",
       "solution": "UX minimalista centrada en grillas de producto, catálogo sincronizado y pasarelas LATAM. Entregué documentación para autonomía en inventario y diseño.",
-      "results": "Ecosistema cohesionado — web + apps + pagos + autonomía — sin comisión de plataforma.",
+      "results": "Sistema retail minimalista que la dueña opera: catálogo sincronizado web/móvil, pagos regionales y documentación que elimina dependencia diaria del desarrollador.",
       "highlights": [
         "UI minimalista de grilla de productos",
         "Sincronización de catálogo web ↔ móvil",
@@ -123,7 +148,7 @@
       "role": "ECシステム · モバイル同期 · 決済 · ナレッジ移管",
       "challenge": "Hostinger上で、同一在庫のWooCommerce＋iOS/Android、メキシコ/中米決済、完全な引き継ぎ資料を実現すること。",
       "solution": "商品グリッド重視のミニマルUX、Web/アプリ同期カタログ、LATAM向け決済、自律運用ドキュメントを構築。",
-      "results": "Web＋アプリ＋決済＋自律運用が揃った、長期運用可能なブランド基盤。",
+      "results": "オーナーが運用できるミニマル小売：Web/モバイル同期カタログ、地域決済、日常の開発者依存を減らす引き継ぎ資料。",
       "highlights": [
         "ミニマルな商品グリッドUI",
         "Web ↔ モバイルのカタログ同期",
@@ -137,7 +162,7 @@
       "role": "电商系统 · 移动同步 · 支付 · 知识交接",
       "challenge": "在 Hostinger 上打造干净的 WooCommerce 店面与共享库存的 iOS/Android 应用，支持墨西哥/中美洲支付，并提供完整交接文档。",
       "solution": "以商品网格为核心的极简 UX、Web/App 同步目录架构，以及适合拉美的支付集成，并交付自主运营文档。",
-      "results": "Web + App + 支付 + 自主权一体的品牌生态，避免销售佣金锁定。",
+      "results": "店主可运营的极简零售系统：Web/移动同步目录、区域支付就绪，以及降低日常开发依赖的交接文档。",
       "highlights": [
         "极简商品网格商业 UI",
         "Web ↔ 移动目录同步",

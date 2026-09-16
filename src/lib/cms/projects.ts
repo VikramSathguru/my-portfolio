@@ -1,10 +1,14 @@
 import { promises as fs } from "fs";
 import path from "path";
+import {
+  fetchProjectBySlugFromSupabase,
+  fetchProjectsFromSupabase,
+} from "./supabase-client";
 import type { CmsProject } from "./types";
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "projects");
 
-async function readAllProjects(): Promise<CmsProject[]> {
+async function readAllProjectsFromJson(): Promise<CmsProject[]> {
   const files = await fs.readdir(CONTENT_DIR);
   const jsonFiles = files.filter((file) => file.endsWith(".json"));
 
@@ -16,6 +20,12 @@ async function readAllProjects(): Promise<CmsProject[]> {
   );
 
   return projects.sort((a, b) => a.order - b.order);
+}
+
+async function readAllProjects(): Promise<CmsProject[]> {
+  const fromSupabase = await fetchProjectsFromSupabase();
+  if (fromSupabase?.length) return fromSupabase;
+  return readAllProjectsFromJson();
 }
 
 export async function getProjects(): Promise<CmsProject[]> {
@@ -30,7 +40,10 @@ export async function getFeaturedProjects(): Promise<CmsProject[]> {
 export async function getProjectBySlug(
   slug: string,
 ): Promise<CmsProject | null> {
-  const projects = await readAllProjects();
+  const fromSupabase = await fetchProjectBySlugFromSupabase(slug);
+  if (fromSupabase) return fromSupabase;
+
+  const projects = await readAllProjectsFromJson();
   return projects.find((project) => project.slug === slug) ?? null;
 }
 

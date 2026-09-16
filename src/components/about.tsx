@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { m } from "@/components/motion";
 import {
   experienceHighlightKeys,
   processSteps,
@@ -12,7 +12,7 @@ export function About() {
   const t = useTranslations("About");
 
   return (
-    <section id="about" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="about" className="content-auto scroll-mt-24 py-20 sm:py-28">
       <div className="site-container px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
           <div>
@@ -77,7 +77,7 @@ export function About() {
               </p>
               <ol>
                 {processSteps.map((step, index) => (
-                  <motion.li
+                  <m.li
                     key={step}
                     initial={{ opacity: 0, x: 16 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ export function About() {
                         {t(`process.${step}.text`)}
                       </p>
                     </div>
-                  </motion.li>
+                  </m.li>
                 ))}
               </ol>
             </div>

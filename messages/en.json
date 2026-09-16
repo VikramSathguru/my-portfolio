@@ -1,29 +1,59 @@
 {
   "Meta": {
     "title": "Vikram Sathguru — Senior Full Stack Developer",
-    "description": "Senior Full Stack Developer with 10+ years of experience building scalable web platforms, e-commerce solutions, CRM systems, and AI-powered automation. PolarSync · NUS."
+    "description": "Senior Full Stack Developer (NUS, PolarSync) shipping e-commerce, multi-vendor marketplaces, CRM platforms, and AI automation for international teams."
   },
   "Nav": {
     "portfolio": "Portfolio",
     "about": "About Me",
-    "contact": "Contact Us",
     "openMenu": "Open menu",
     "home": "Vikram Sathguru — home",
-    "language": "Language"
+    "language": "Language",
+    "skills": "Skills",
+    "viewWork": "View work"
+  },
+  "Search": {
+    "label": "Search portfolio",
+    "placeholder": "Search…",
+    "searching": "Searching…",
+    "empty": "No matches"
   },
   "Hero": {
-    "role": "Senior Full Stack Developer",
-    "company": "PolarSync",
-    "headline": "Delivering quality software with unmatched performance.",
-    "tagline": "I design and develop scalable web platforms, e-commerce solutions, CRM systems, and AI automation that create lasting business value.",
-    "ctaTalk": "Let's Talk",
-    "ctaPortfolio": "View Portfolio",
-    "bannerAlt": "Vikram Sathguru portfolio banner"
+    "ctaPortfolio": "See case studies",
+    "ctaSkills": "View skills",
+    "carouselLabel": "Hero slides",
+    "slideControl": "Show slide {n}",
+    "hotspotPortfolio": "Go to portfolio",
+    "hotspotSkills": "Go to skills",
+    "hotspotAbout": "Go to about me",
+    "hotspotEcommerce": "View e-commerce work",
+    "hotspotUiux": "View UI/UX work",
+    "hotspotWeb": "View web and app work",
+    "hotspotMobile": "View mobile work",
+    "slides": {
+      "craft": {
+        "eyebrow": "Senior Full Stack Developer · PolarSync",
+        "headline": "I ship commerce and CRM systems clients can actually run.",
+        "tagline": "From fashion storefronts and LATAM retail apps to Pix-split marketplaces and modular CRMs — designed for conversion, operations, and long-term ownership.",
+        "imageAlt": "Vikram Sathguru portfolio banner",
+        "clickHint": "Open featured case studies"
+      },
+      "bio": {
+        "eyebrow": "Professional bio · NUS",
+        "headline": "From NUS Computer Science to shipping production systems.",
+        "tagline": "A short snapshot of my academic path and how it shapes the products I build for clients.",
+        "pointNus": "Graduated from the National University of Singapore (NUS) in Computer Science — Bachelor's (2013–2017) and Master's (2017–2019).",
+        "pointPhd": "Received my PhD in Computer Science from the National University of Singapore.",
+        "pointRole": "Now Senior Full Stack Developer at PolarSync — commerce, marketplaces, CRM, and AI automation.",
+        "imageAlt": "Vikram Sathguru at NUS graduation",
+        "clickHint": "Read the full about section"
+      }
+    }
   },
   "Portfolio": {
-    "eyebrow": "Portfolio",
-    "title": "Our Work",
-    "description": "Selected client work across fashion commerce, LATAM retail apps, multi-vendor marketplaces, and full-stack CRM systems.",
+    "eyebrow": "Selected work",
+    "title": "Case studies, not just screenshots",
+    "description": "Four shipped engagements: AI-first fashion commerce, LATAM retail + apps, multi-vendor Pix marketplace, and a full-stack CRM shell.",
     "empty": "No projects in this category yet.",
     "filters": {
       "all": "All Work",
@@ -35,9 +65,9 @@
     }
   },
   "Expertise": {
-    "eyebrow": "Technical skills",
-    "title": "Expertise across the stack",
-    "description": "From frontend craft to backend systems, e-commerce, CRM, and AI-powered automation — built for reliability and scale.",
+    "eyebrow": "Skills & stack",
+    "title": "What I bring to a build",
+    "description": "Core proficiency where it matters most, plus a clear technical stack across frontend, backend, data, commerce, and automation.",
     "areas": {
       "frontend": {
         "title": "Frontend",
@@ -63,18 +93,22 @@
         "title": "Business Systems",
         "description": "CRM platforms, marketing integrations, and automation that keep teams operating efficiently."
       }
-    }
+    },
+    "coreTitle": "Core skills",
+    "coreDescription": "Hands-on proficiency levels for the tools I use most on client projects.",
+    "stackTitle": "Technical stack",
+    "stackDescription": "Domain-organized technologies — how the system is built, separate from the proficiency bars above."
   },
   "About": {
     "eyebrow": "About me",
-    "title": "Systems that keep creating value after launch",
-    "p1": "Senior Full Stack Developer with 10+ years of experience designing and developing scalable web platforms, business management systems, e-commerce solutions, and automation tools.",
-    "p2": "I specialize in building reliable digital products using React, Next.js, Node.js, Python, PostgreSQL, MySQL, and modern cloud technologies. My experience includes developing custom CRM platforms, API integrations, customer management systems, marketing automation solutions, and AI-powered applications.",
-    "p3": "I have worked with international companies and remote teams, delivering solutions that improve operational efficiency, automate business processes, and create better customer experiences. My approach combines clean architecture, intuitive UX, secure integrations, and long-term scalability.",
+    "title": "Built for operators, not just demos",
+    "p1": "I am a Senior Full Stack Developer with 10+ years shipping web platforms, e-commerce, CRM, and automation for international and remote teams.",
+    "p2": "My recent work focuses on storefronts that convert, marketplaces that move money safely, and CRM modules sales teams actually use — React, Next.js, Node.js, Python, and modern data layers.",
+    "p3": "Clients hire me when they need more than a template: clear UX, secure integrations, CMS-friendly content models, and documentation so the business stays autonomous.",
     "stats": {
-      "years": "Years experience",
-      "education": "MSc & BSc Computer Science",
-      "reach": "Remote & international teams"
+      "years": "Years shipping products",
+      "education": "MSc & BSc, NUS Computer Science",
+      "reach": "Featured client systems"
     },
     "experienceEyebrow": "Job experience",
     "jobTitle": "Senior Full Stack Developer",
@@ -112,40 +146,19 @@
     "mastersPeriod": "Aug 2017 – Jun 2019",
     "bachelorsPeriod": "Aug 2013 – Jun 2017",
     "singapore": "Singapore",
-    "location": "Singapore · Remote-friendly"
-  },
-  "Contact": {
-    "eyebrow": "Contact",
-    "title": "Let's discuss your project",
-    "description": "Tell me about your web platform, e-commerce store, CRM, or automation idea — I'll help turn it into a product that keeps creating value.",
-    "email": "Email",
-    "phone": "Phone",
-    "location": "Location",
-    "name": "Full Name",
-    "namePlaceholder": "Your name",
-    "emailLabel": "Email Address",
-    "emailPlaceholder": "you@company.com",
-    "phoneLabel": "Phone Number",
-    "phonePlaceholder": "+65 ...",
-    "message": "Project Details",
-    "messagePlaceholder": "Share your goals, timeline, and stack preferences...",
-    "submit": "Send Message",
-    "sent": "Opening your email client… If nothing opens, write to",
-    "mailSubject": "Portfolio inquiry from {name}"
+    "location": "Singapore · Remote worldwide"
   },
   "Footer": {
-    "blurb": "Senior Full Stack Developer building scalable web platforms, e-commerce, CRM, and AI automation.",
+    "blurb": "Senior Full Stack Developer — e-commerce, marketplaces, CRM, and AI automation with operator-ready handoff.",
     "navigate": "Navigate",
-    "connect": "Connect",
-    "contact": "Contact",
     "rights": "All rights reserved.",
     "backToTop": "Back to top"
   },
   "Featured": {
-    "eyebrow": "Featured case studies",
-    "title": "Work that proves the craft",
-    "description": "Real products I shipped — commerce platforms, multi-vendor marketplaces, and CRM systems — with screenshots, architecture decisions, and measurable outcomes.",
-    "viewCase": "View case study"
+    "eyebrow": "Proof of craft",
+    "title": "Featured systems I designed and shipped",
+    "description": "Open a case study for the business problem, architecture choices, product surfaces, and what the client can run after launch.",
+    "viewCase": "Open full case study"
   },
   "CaseStudy": {
     "challenge": "Challenge",
@@ -154,8 +167,7 @@
     "highlights": "What I delivered",
     "tech": "Stack & systems",
     "gallery": "Product surfaces",
-    "cmsNote": "Screens managed as CMS media assets — landing, store, and admin views for each engagement.",
-    "cta": "Start a similar project",
+    "cmsNote": "Landing, store, and admin surfaces stored as structured media — the same pattern used in CMS-driven product systems.",
     "back": "Back to portfolio"
   }
 }

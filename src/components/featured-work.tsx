@@ -36,6 +36,7 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
         <article className="grid overflow-hidden rounded-[2rem] bg-[var(--surface)] ring-1 ring-[var(--border)] lg:grid-cols-[1.15fr_0.85fr]">
           <Link
             href={`/work/${featured.slug}`}
+            transitionTypes={["nav-forward"]}
             className="relative min-h-[18rem] overflow-hidden sm:min-h-[24rem]"
           >
             <Image
@@ -44,6 +45,7 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 60vw"
+              quality={80}
               className="object-cover object-top transition duration-700 hover:scale-[1.02]"
             />
           </Link>
@@ -60,9 +62,9 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
               </h3>
               <p className="mt-3 text-[var(--muted)]">{content.summary}</p>
 
-              <dl className="mt-8 grid grid-cols-3 gap-3 border-t border-[var(--border)] pt-6">
+              <dl className="mt-8 grid grid-cols-2 gap-3 border-t border-[var(--border)] pt-6 sm:grid-cols-4">
                 {featured.metrics.map((metric) => (
-                  <div key={metric.value}>
+                  <div key={`${metric.value}-${metric.label.en}`}>
                     <dt className="font-display text-xl font-bold text-[var(--foreground)] sm:text-2xl">
                       {metric.value}
                     </dt>
@@ -76,6 +78,7 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
 
             <Link
               href={`/work/${featured.slug}`}
+              transitionTypes={["nav-forward"]}
               className="mt-8 inline-flex h-12 w-fit items-center gap-2 rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white transition hover:brightness-110"
             >
               {t("viewCase")}
@@ -92,6 +95,7 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
                 <Link
                   key={project.id}
                   href={`/work/${project.slug}`}
+                  transitionTypes={["nav-forward"]}
                   className="group overflow-hidden rounded-3xl bg-[var(--surface)] ring-1 ring-[var(--border)] transition hover:ring-[var(--accent)]"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
@@ -100,6 +104,7 @@ export function FeaturedWork({ projects }: { projects: CmsProject[] }) {
                       alt={item.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
+                      quality={75}
                       className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
                     />
                   </div>

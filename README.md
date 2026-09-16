@@ -1,27 +1,45 @@
-# Vikram Portfolio
+# Vikram Portfolio (frontend)
 
-Personal portfolio for **Vikram Sathguru** — Next.js, Tailwind CSS, light/dark mode. Layout inspired by a MultiQoS-style portfolio page (hero, filtered work grid, about, contact form).
+Personal portfolio for **Vikram Sathguru** — Next.js, Tailwind CSS, light/dark mode. Built for sharing case studies (including Workana-safe viewing without external contact details).
+
+**Backend:** [portfolio-backend](https://github.com/VikramSathguru/portfolio-backend) (Supabase schema, RLS, seed, Storage).
 
 ## Getting started
 
 ```bash
 npm install
+cp .env.example .env.local   # optional Supabase keys
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## How to add a portfolio project (CMS)
+## Content / CMS
 
-Projects are stored as CMS documents in `content/projects/*.json` and media in `public/portfolio/<slug>/`.
+Projects load from **Supabase** when `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are set. Otherwise the site falls back to `content/projects/*.json` and local images under `public/portfolio/`.
+
+### Supabase admin (recommended for production)
+
+1. Set up the [backend repo](https://github.com/VikramSathguru/portfolio-backend) (migrations, seed, image migrate).
+2. Copy `.env.example` → `.env.local` and set:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+3. Create an admin user in the Supabase Auth dashboard (a `profiles` row with `role = admin` is created automatically).
+4. Open [http://localhost:3000/admin](http://localhost:3000/admin) — sign in, create/edit projects, upload covers to Storage.
+5. Header search calls the `search_site` RPC when Supabase is configured.
+
+Never put the **service role** key in this frontend or in Vercel.
+
+### JSON fallback (local / no CMS)
 
 1. Add screenshots under `public/portfolio/my-slug/`
-2. Copy an existing JSON file in `content/projects/` and edit fields (`title`, `summary`, `gallery`, locale blocks, etc.)
-3. Set `"featured": true` to show it in the featured case section
-4. Restart / refresh — the grid, featured block, and `/work/[slug]` case study update automatically
-
-This file-based CMS mirrors a headless model (Sanity/Payload-ready): structured fields, localized content, and media assets separated from UI code.
-
+2. Copy an existing JSON file in `content/projects/` and edit fields
+3. Set `"featured": true` for the featured case section
+4. Refresh — grid, featured block, and `/work/[slug]` update from JSON
 
 ## Internationalization (i18n)
 
@@ -31,50 +49,31 @@ Supported locales: **English (`en`)**, **Portuguese (`pt`)**, **Spanish (`es`)**
 - Translations live in `messages/*.json`
 - Switch language from the header dropdown
 
-To edit copy, update the matching key in each locale file. To add a language, extend `src/i18n/routing.ts` and add `messages/<code>.json`.
+## Workana-safe contact policy
 
-## Customize other content
+The public site intentionally **does not** show email, phone, social links, or a contact form — so clients can review the portfolio on Workana without violating external-contact rules. Reach out stays on the Workana platform.
 
-In `src/data/portfolio.ts` edit email, phone, socials, skill bars, and project metadata.
+## Deploy (Vercel)
 
-UI copy (headlines, about, contact, project titles) lives in `messages/*.json`.
+Repo: `https://github.com/VikramSathguru/my-portfolio.git` (this frontend only).
 
-Assets:
+1. Push this repo to GitHub
+2. Import at [vercel.com/new](https://vercel.com/new) — root = repo root
+3. Set env vars:
 
-- Logo → `public/images/vikram-logo.png`
-- Hero banner → `public/images/vikram-banner.png`
-
-## Header links
-
-- **Portfolio** → `#portfolio`
-- **About Me** → `#about`
-- **Contact Us** → `#contact`
-
-## Deploy
-
-### Vercel (recommended)
-
-1. Push this repo to GitHub / GitLab / Bitbucket  
-2. Import at [vercel.com/new](https://vercel.com/new)  
-3. Deploy
-
-```bash
-npm i -g vercel
-vercel
-```
-
-### Other free platforms
-
-| Platform | Notes |
+| Name | Value |
 | --- | --- |
-| **[Netlify](https://www.netlify.com/)** | Strong Next.js support |
-| **[Cloudflare Pages](https://pages.cloudflare.com/)** | Generous free tier |
-| **[Render](https://render.com/)** | Free Node tier (may sleep when idle) |
-| **[Railway](https://railway.app/)** | Easy GitHub deploys (trial credits) |
+| `NEXT_PUBLIC_SUPABASE_URL` | `https://YOUR_PROJECT.supabase.co` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | anon / public key |
+| `NEXT_PUBLIC_SITE_URL` | your production URL (optional, for sitemap) |
+
+4. Redeploy. Case-study images should load from Supabase Storage CDN URLs after you run the backend image migration.
+
+Without Supabase env vars, production still serves from committed `content/projects/*.json` and `public/portfolio/`.
 
 ## Scripts
 
-- `npm run dev` — local development  
-- `npm run build` — production build  
-- `npm run start` — serve production build  
-- `npm run lint` — ESLint  
+- `npm run dev` — local development
+- `npm run build` — production build
+- `npm run start` — serve production build
+- `npm run lint` — ESLint

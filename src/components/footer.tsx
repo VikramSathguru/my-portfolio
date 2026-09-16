@@ -11,13 +11,13 @@ export function Footer() {
 
   const navItems = [
     { href: "#portfolio", label: tNav("portfolio") },
+    { href: "#expertise", label: tNav("skills") },
     { href: "#about", label: tNav("about") },
-    { href: "#contact", label: t("contact") },
   ];
 
   return (
     <footer className="bg-[#0b1220] text-white">
-      <div className="site-container grid gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="site-container grid gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr]">
         <div>
           <BrandLogo size="md" showWordmark className="[&_.font-display]:text-white" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
@@ -37,39 +37,6 @@ export function Footer() {
                 </a>
               </li>
             ))}
-          </ul>
-        </div>
-
-        <div>
-          <p className="text-sm font-semibold tracking-wide text-white/90 uppercase">
-            {t("connect")}
-          </p>
-          <ul className="mt-4 space-y-3 text-sm text-white/65">
-            <li>
-              <a href={`mailto:${site.email}`} className="transition hover:text-white">
-                {site.email}
-              </a>
-            </li>
-            <li>
-              <a
-                href={site.socials.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-white"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href={site.socials.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-white"
-              >
-                GitHub
-              </a>
-            </li>
           </ul>
         </div>
       </div>
