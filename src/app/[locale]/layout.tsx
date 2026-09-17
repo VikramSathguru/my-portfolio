@@ -52,8 +52,8 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     icons: {
-      icon: [{ url: "/images/vikram-logo.png", type: "image/png" }],
-      apple: [{ url: "/apple-icon.png" }],
+      icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+      apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
     },
     openGraph: {
       title: t("title"),
