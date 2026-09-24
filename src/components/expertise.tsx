@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { m } from "@/components/motion";
 import {
   expertiseAreas,
@@ -127,6 +128,15 @@ export function Expertise() {
                 </ul>
               </m.div>
             ))}
+          </div>
+
+          <div className="mt-12">
+            <Link
+              href="/solutions"
+              className="inline-flex h-11 items-center rounded-full border border-[var(--border-strong)] px-5 text-sm font-semibold text-[var(--foreground)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            >
+              {t("solutionsCta")}
+            </Link>
           </div>
         </div>
       </div>

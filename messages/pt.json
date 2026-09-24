@@ -10,6 +10,7 @@
     "home": "Vikram Sathguru — início",
     "language": "Idioma",
     "skills": "Skills",
+    "solutions": "Minhas soluções",
     "viewWork": "Ver trabalhos"
   },
   "Search": {
@@ -53,7 +54,7 @@
   "Portfolio": {
     "eyebrow": "Trabalho selecionado",
     "title": "Cases, não só capturas de tela",
-    "description": "Quatro entregas reais: e-commerce AI-first, varejo LATAM + apps, marketplace multi-vendedor com Pix e shell CRM full-stack.",
+    "description": "Cinco entregas reais: e-commerce AI-first, varejo LATAM + apps, marketplace multi-vendedor com Pix, shell CRM full-stack e automação de pesquisa, suporte e agenda.",
     "empty": "Ainda não há projetos nesta categoria.",
     "filters": {
       "all": "Todos",
@@ -71,7 +72,7 @@
     "areas": {
       "frontend": {
         "title": "Frontend",
-        "description": "Interfaces responsivas e intuitivas com arquiteturas React modernas."
+        "description": "Interfaces responsivas em React, Next.js, Angular e Vue."
       },
       "backend": {
         "title": "Backend",
@@ -83,21 +84,30 @@
       },
       "ecommerce": {
         "title": "E-Commerce",
-        "description": "Lojas e operações — de catálogos e checkout à gestão de pedidos."
+        "description": "WordPress, WooCommerce e Shopify — catálogos, checkout e gestão de pedidos."
       },
       "ai": {
         "title": "IA e Automação",
-        "description": "Assistentes inteligentes e automação que reduzem trabalho manual."
+        "description": "Fluxos no Make.com e no Zapier, mensagens no WhatsApp e assistentes que cortam suporte repetido."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Apps em React Native e Flutter, ligados às mesmas contas e pedidos da web."
       },
       "business": {
         "title": "Sistemas de negócios",
-        "description": "CRMs, integrações de marketing e automação operacional."
+        "description": "CRM, SEO, Google Search Console e as integrações que mantêm a equipe operando."
+      },
+      "blockchain": {
+        "title": "Blockchain",
+        "description": "Aplicações em Solana e Ethereum, escritas em Solidity, quando o registro compartilhado precisa continuar verificável."
       }
     },
     "coreTitle": "Skills principais",
     "coreDescription": "Níveis de domínio das ferramentas que mais uso em projetos de clientes.",
     "stackTitle": "Stack técnico",
-    "stackDescription": "Tecnologias por domínio — como o sistema é construído, separado das barras de proficiência acima."
+    "stackDescription": "Tecnologias por domínio — como o sistema é construído, separado das barras de proficiência acima.",
+    "solutionsCta": "Ver minhas soluções"
   },
   "About": {
     "eyebrow": "Sobre mim",
@@ -154,12 +164,6 @@
     "rights": "Todos os direitos reservados.",
     "backToTop": "Voltar ao topo"
   },
-  "Featured": {
-    "eyebrow": "Prova de ofício",
-    "title": "Sistemas em destaque que projetei e entreguei",
-    "description": "Abra um case para ver o problema de negócio, arquitetura, telas do produto e o que o cliente opera após o lançamento.",
-    "viewCase": "Abrir case completo"
-  },
   "CaseStudy": {
     "challenge": "Desafio",
     "solution": "Solução",
@@ -169,5 +173,26 @@
     "gallery": "Superfícies do produto",
     "cmsNote": "Telas geridas como mídia de CMS — landing, loja e admin de cada projeto.",
     "back": "Voltar ao portfólio"
+  },
+  "Solutions": {
+    "eyebrow": "Minhas soluções",
+    "title": "Sistemas que produzem resultado",
+    "description": "Estes são os sistemas que eu construo — sites, lojas online, CRM, aquisição de clientes, automação, apps, blockchain e SEO. Cada página mostra o que precisa estar no lugar para o sistema produzir resultado.",
+    "open": "Abrir esta solução",
+    "back": "Todas as soluções",
+    "necessity": "Por que é necessária",
+    "importance": "Por que importa no trabalho",
+    "uses": "Onde aparece",
+    "related": "Soluções relacionadas",
+    "outcomes": "O que isso muda",
+    "standard": "Como se faz direito",
+    "similar": "Trabalho semelhante",
+    "similarCta": "Ver projeto",
+    "groups": {
+      "interface": "Interface",
+      "backend": "Backend",
+      "data": "Dados",
+      "intelligence": "Inteligência"
+    }
   }
 }

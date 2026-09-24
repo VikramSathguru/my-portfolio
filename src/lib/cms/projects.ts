@@ -23,18 +23,20 @@ async function readAllProjectsFromJson(): Promise<CmsProject[]> {
 }
 
 async function readAllProjects(): Promise<CmsProject[]> {
-  const fromSupabase = await fetchProjectsFromSupabase();
-  if (fromSupabase?.length) return fromSupabase;
-  return readAllProjectsFromJson();
+  const [fromSupabase, fromJson] = await Promise.all([
+    fetchProjectsFromSupabase(),
+    readAllProjectsFromJson(),
+  ]);
+  if (!fromSupabase?.length) return fromJson;
+
+  const seen = new Set(fromSupabase.map((project) => project.slug));
+  return [...fromSupabase, ...fromJson.filter((project) => !seen.has(project.slug))].sort(
+    (a, b) => a.order - b.order,
+  );
 }
 
 export async function getProjects(): Promise<CmsProject[]> {
   return readAllProjects();
-}
-
-export async function getFeaturedProjects(): Promise<CmsProject[]> {
-  const projects = await readAllProjects();
-  return projects.filter((project) => project.featured);
 }
 
 export async function getProjectBySlug(

@@ -1,18 +1,21 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { BrandLogo } from "./brand-logo";
 import { site } from "@/data/portfolio";
 
 export function Footer() {
   const t = useTranslations("Footer");
   const tNav = useTranslations("Nav");
+  const locale = useLocale();
   const year = new Date().getFullYear();
 
   const navItems = [
-    { href: "#portfolio", label: tNav("portfolio") },
-    { href: "#expertise", label: tNav("skills") },
-    { href: "#about", label: tNav("about") },
+    { href: `/${locale}#portfolio`, label: tNav("portfolio") },
+    { href: "/solutions", label: tNav("solutions"), route: true },
+    { href: `/${locale}#expertise`, label: tNav("skills") },
+    { href: `/${locale}#about`, label: tNav("about") },
   ];
 
   return (
@@ -32,9 +35,15 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-white/65">
             {navItems.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition hover:text-white">
-                  {link.label}
-                </a>
+                {"route" in link && link.route ? (
+                  <Link href="/solutions" className="transition hover:text-white">
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a href={link.href} className="transition hover:text-white">
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

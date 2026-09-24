@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { getProjectSlugs } from "@/lib/cms/projects";
+import { solutionSlugs } from "@/data/solutions";
 import { siteConfig } from "@/lib/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -15,6 +16,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 1,
     });
+
+    entries.push({
+      url: `${base}/${locale}/solutions`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
+
+    for (const slug of solutionSlugs) {
+      entries.push({
+        url: `${base}/${locale}/solutions/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.6,
+      });
+    }
 
     for (const slug of slugs) {
       entries.push({

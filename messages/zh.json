@@ -10,6 +10,7 @@
     "home": "Vikram Sathguru — 首页",
     "language": "语言",
     "skills": "技能",
+    "solutions": "我的方案",
     "viewWork": "查看作品"
   },
   "Search": {
@@ -53,7 +54,7 @@
   "Portfolio": {
     "eyebrow": "精选作品",
     "title": "案例，而不只是截图",
-    "description": "四项真实交付：AI 优先时尚电商、拉美零售+应用、Pix 多商户市场，以及全栈 CRM 壳层。",
+    "description": "五项真实交付：AI 优先时尚电商、拉美零售+应用、Pix 多商户市场、全栈 CRM 壳层，以及调研、客服与日程的自动化。",
     "empty": "该分类下暂无项目。",
     "filters": {
       "all": "全部",
@@ -71,7 +72,7 @@
     "areas": {
       "frontend": {
         "title": "前端",
-        "description": "基于现代 React 架构的响应式、直观界面。"
+        "description": "用 React、Next.js、Angular 和 Vue 做的响应式界面。"
       },
       "backend": {
         "title": "后端",
@@ -83,21 +84,30 @@
       },
       "ecommerce": {
         "title": "电商",
-        "description": "从目录、结账到订单管理的完整电商运营。"
+        "description": "WordPress、WooCommerce 和 Shopify — 目录、结账和订单管理。"
       },
       "ai": {
         "title": "AI 与自动化",
-        "description": "减少手工劳动、提升支持效率的智能助手与自动化。"
+        "description": "用 Make.com 和 Zapier 做工作流，用 WhatsApp 发消息，并用助手减少重复的客服工作。"
+      },
+      "mobile": {
+        "title": "移动",
+        "description": "用 React Native 和 Flutter 做的应用，账户和订单与网站是同一套。"
       },
       "business": {
         "title": "业务系统",
-        "description": "CRM、营销集成与保障团队高效运转的自动化。"
+        "description": "CRM、SEO、Google Search Console，以及让团队持续运转的集成。"
+      },
+      "blockchain": {
+        "title": "区块链",
+        "description": "用 Solidity 写的 Solana 和 Ethereum 应用，用在共享记录必须保持可核验的时候。"
       }
     },
     "coreTitle": "核心技能",
     "coreDescription": "我在客户项目中最常用工具的熟练度。",
     "stackTitle": "技术栈",
-    "stackDescription": "按领域整理的技术清单 — 展示系统如何构成，与上方熟练度条分开。"
+    "stackDescription": "按领域整理的技术清单 — 展示系统如何构成，与上方熟练度条分开。",
+    "solutionsCta": "查看我的方案"
   },
   "About": {
     "eyebrow": "关于我",
@@ -154,12 +164,6 @@
     "rights": "保留所有权利。",
     "backToTop": "回到顶部"
   },
-  "Featured": {
-    "eyebrow": "专业证明",
-    "title": "我设计并交付的精选系统",
-    "description": "打开案例可查看业务问题、架构选择、产品界面，以及上线后客户如何运营。",
-    "viewCase": "打开完整案例"
-  },
   "CaseStudy": {
     "challenge": "挑战",
     "solution": "方案",
@@ -169,5 +173,26 @@
     "gallery": "产品界面",
     "cmsNote": "作为 CMS 媒体资产管理的界面 — 每个项目的落地页、商店页与管理端。",
     "back": "返回作品集"
+  },
+  "Solutions": {
+    "eyebrow": "我的方案",
+    "title": "能产生结果的系统",
+    "description": "这里不是一份框架清单，而是我搭建的系统——网站、网上商店、CRM、客户获取、自动化、移动应用、区块链和 SEO。每个页面说明这个系统要产生结果，必须先具备什么。",
+    "open": "打开此方案",
+    "back": "全部方案",
+    "necessity": "为什么必要",
+    "importance": "在工作中为什么重要",
+    "uses": "出现在哪里",
+    "related": "相关方案",
+    "outcomes": "这会改变什么",
+    "standard": "正确的做法",
+    "similar": "相关作品",
+    "similarCta": "查看项目",
+    "groups": {
+      "interface": "界面",
+      "backend": "后端",
+      "data": "数据",
+      "intelligence": "智能"
+    }
   }
 }

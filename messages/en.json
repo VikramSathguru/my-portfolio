@@ -10,6 +10,7 @@
     "home": "Vikram Sathguru — home",
     "language": "Language",
     "skills": "Skills",
+    "solutions": "My Solutions",
     "viewWork": "View work"
   },
   "Search": {
@@ -53,7 +54,7 @@
   "Portfolio": {
     "eyebrow": "Selected work",
     "title": "Case studies, not just screenshots",
-    "description": "Four shipped engagements: AI-first fashion commerce, LATAM retail + apps, multi-vendor Pix marketplace, and a full-stack CRM shell.",
+    "description": "Five shipped engagements: AI-first fashion commerce, LATAM retail + apps, multi-vendor Pix marketplace, a full-stack CRM shell, and operations automation for research, support, and scheduling.",
     "empty": "No projects in this category yet.",
     "filters": {
       "all": "All Work",
@@ -71,7 +72,7 @@
     "areas": {
       "frontend": {
         "title": "Frontend",
-        "description": "Responsive, intuitive interfaces with modern React architectures and design-conscious delivery."
+        "description": "Responsive interfaces in React, Next.js, Angular, and Vue."
       },
       "backend": {
         "title": "Backend",
@@ -83,21 +84,30 @@
       },
       "ecommerce": {
         "title": "E-Commerce",
-        "description": "Storefronts and commerce operations — from catalogs and checkout to order management."
+        "description": "WordPress, WooCommerce, and Shopify — catalogs, checkout, and order management."
       },
       "ai": {
         "title": "AI & Automation",
-        "description": "Intelligent assistants and workflow automation that reduce manual work and improve support."
+        "description": "Make.com and Zapier workflows, WhatsApp messaging, and assistants that cut repeated support work."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "React Native and Flutter apps tied to the same accounts and orders as the web."
       },
       "business": {
         "title": "Business Systems",
-        "description": "CRM platforms, marketing integrations, and automation that keep teams operating efficiently."
+        "description": "CRM, SEO, Google Search Console, and the integrations that keep a team operating."
+      },
+      "blockchain": {
+        "title": "Blockchain",
+        "description": "Solana and Ethereum applications written in Solidity, where a shared record has to stay checkable."
       }
     },
     "coreTitle": "Core skills",
     "coreDescription": "Hands-on proficiency levels for the tools I use most on client projects.",
     "stackTitle": "Technical stack",
-    "stackDescription": "Domain-organized technologies — how the system is built, separate from the proficiency bars above."
+    "stackDescription": "Domain-organized technologies — how the system is built, separate from the proficiency bars above.",
+    "solutionsCta": "See my solutions"
   },
   "About": {
     "eyebrow": "About me",
@@ -154,12 +164,6 @@
     "rights": "All rights reserved.",
     "backToTop": "Back to top"
   },
-  "Featured": {
-    "eyebrow": "Proof of craft",
-    "title": "Featured systems I designed and shipped",
-    "description": "Open a case study for the business problem, architecture choices, product surfaces, and what the client can run after launch.",
-    "viewCase": "Open full case study"
-  },
   "CaseStudy": {
     "challenge": "Challenge",
     "solution": "Solution",
@@ -169,5 +173,26 @@
     "gallery": "Product surfaces",
     "cmsNote": "Landing, store, and admin surfaces stored as structured media — the same pattern used in CMS-driven product systems.",
     "back": "Back to portfolio"
+  },
+  "Solutions": {
+    "eyebrow": "My solutions",
+    "title": "Systems that produce a result",
+    "description": "These are the systems I build — websites, online stores, CRM, customer acquisition, automation, mobile apps, blockchain, and SEO. Each page shows what has to be in place for that system to produce a result.",
+    "open": "Open this solution",
+    "back": "All solutions",
+    "necessity": "Why it is necessary",
+    "importance": "Why it matters in the work",
+    "uses": "Where it shows up",
+    "related": "Related solutions",
+    "outcomes": "What this changes",
+    "standard": "How it is done properly",
+    "similar": "Similar work",
+    "similarCta": "View project",
+    "groups": {
+      "interface": "Interface",
+      "backend": "Backend",
+      "data": "Data",
+      "intelligence": "Intelligence"
+    }
   }
 }

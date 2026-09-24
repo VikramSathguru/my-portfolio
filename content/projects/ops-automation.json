@@ -1,0 +1,183 @@
+{
+  "id": "ops-automation",
+  "slug": "ops-automation",
+  "featured": false,
+  "order": 5,
+  "categories": ["ai", "web"],
+  "cover": "/portfolio/ops-automation/cover.png",
+  "tech": [
+    "Make.com",
+    "Zapier",
+    "WhatsApp Business",
+    "Chatbots",
+    "Ticket workflows",
+    "Calendar integration"
+  ],
+  "metrics": [
+    {
+      "value": "3",
+      "label": {
+        "en": "Areas in one system",
+        "pt": "Áreas em um sistema",
+        "es": "Áreas en un sistema",
+        "ja": "一つのシステムの領域",
+        "zh": "同一系统中的领域"
+      }
+    },
+    {
+      "value": "Reports",
+      "label": {
+        "en": "Research collection and write-up",
+        "pt": "Coleta e relatório de pesquisa",
+        "es": "Recopilación e informe de investigación",
+        "ja": "調査の収集と報告書",
+        "zh": "调研收集与报告"
+      }
+    },
+    {
+      "value": "Tickets",
+      "label": {
+        "en": "Support chat and queue",
+        "pt": "Chat e fila de suporte",
+        "es": "Chat y cola de soporte",
+        "ja": "サポートのチャットとキュー",
+        "zh": "客服聊天与队列"
+      }
+    },
+    {
+      "value": "Calendar",
+      "label": {
+        "en": "Appointments and reminders",
+        "pt": "Agendamentos e lembretes",
+        "es": "Citas y recordatorios",
+        "ja": "予約とリマインダー",
+        "zh": "预约与提醒"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/portfolio/ops-automation/research.png",
+      "alt": {
+        "en": "Research workspace for sources and a written findings report",
+        "pt": "Área de pesquisa com fontes e um relatório de achados",
+        "es": "Espacio de investigación con fuentes y un informe de hallazgos",
+        "ja": "情報源と調査報告のワークスペース",
+        "zh": "资料来源与调研报告工作区"
+      },
+      "label": {
+        "en": "Research",
+        "pt": "Pesquisa",
+        "es": "Investigación",
+        "ja": "調査",
+        "zh": "调研"
+      }
+    },
+    {
+      "src": "/portfolio/ops-automation/support.png",
+      "alt": {
+        "en": "Support desk with an open ticket queue and a chat reply",
+        "pt": "Mesa de suporte com fila de tickets e resposta no chat",
+        "es": "Mesa de soporte con cola de tickets y respuesta en el chat",
+        "ja": "チケットキューとチャット返信のサポート画面",
+        "zh": "带工单队列和聊天回复的客服台"
+      },
+      "label": {
+        "en": "Support",
+        "pt": "Suporte",
+        "es": "Soporte",
+        "ja": "サポート",
+        "zh": "客服"
+      }
+    },
+    {
+      "src": "/portfolio/ops-automation/schedule.png",
+      "alt": {
+        "en": "Weekly schedule with appointments and a reminder on a phone",
+        "pt": "Agenda semanal com compromissos e um lembrete no celular",
+        "es": "Agenda semanal con citas y un recordatorio en el teléfono",
+        "ja": "予約とスマホのリマインダーがある週間スケジュール",
+        "zh": "带预约和手机提醒的周日程"
+      },
+      "label": {
+        "en": "Schedule",
+        "pt": "Agenda",
+        "es": "Agenda",
+        "ja": "予定",
+        "zh": "日程"
+      }
+    }
+  ],
+  "content": {
+    "en": {
+      "title": "Research, support, and scheduling",
+      "summary": "One automation system for three operating areas: research, customer support, and appointment scheduling.",
+      "role": "Automation systems · Integrated workflows",
+      "challenge": "The work had to raise efficiency and accuracy across investigations, support, and agendas. Research still meant collecting information and writing it up by hand. Support waited on a person for repeated questions. Scheduling lived apart from the calendars the team already used.",
+      "solution": "I built one integrated system. Research workflows collect sources, organize the analysis, and produce a report. Support uses a chatbot for the questions that repeat and a ticket queue for everything that still needs a person. Scheduling books appointments, sends reminders, and writes them into the existing calendar. Make.com and Zapier carry the handoffs. WhatsApp is one of the channels customers already answer.",
+      "results": "The three areas share one system. A research report, a support reply, and an appointment reminder no longer depend on someone retyping the same facts into separate tools.",
+      "highlights": [
+        "Research collection, analysis, and report generation",
+        "Support chatbot for repeated questions, with a ticket queue for the rest",
+        "Appointment booking, reminders, and calendar integration",
+        "Scenarios operators can change without a new deploy"
+      ]
+    },
+    "pt": {
+      "title": "Pesquisa, suporte e agenda",
+      "summary": "Um sistema de automação para três áreas: pesquisa, suporte ao cliente e agendamento.",
+      "role": "Sistemas de automação · Fluxos integrados",
+      "challenge": "O trabalho precisava aumentar eficiência e precisão em investigações, suporte e agendas. A pesquisa ainda era coleta e redação na mão. O suporte esperava uma pessoa nas perguntas repetidas. A agenda ficava fora dos calendários que a equipe já usava.",
+      "solution": "Construí um sistema integrado. A pesquisa coleta fontes, organiza a análise e gera o relatório. O suporte usa chatbot nas perguntas que se repetem e uma fila de tickets no que ainda precisa de uma pessoa. A agenda marca horários, envia lembretes e grava no calendário existente. Make.com e Zapier fazem a passagem. WhatsApp é um dos canais que o cliente já responde.",
+      "results": "As três áreas compartilham um sistema. Relatório, resposta de suporte e lembrete de horário não dependem mais de alguém redigitando os mesmos fatos em ferramentas separadas.",
+      "highlights": [
+        "Coleta, análise e geração de relatórios de pesquisa",
+        "Chatbot para perguntas repetidas e fila de tickets para o resto",
+        "Agendamento, lembretes e integração com calendário",
+        "Cenários que a operação altera sem um novo deploy"
+      ]
+    },
+    "es": {
+      "title": "Investigación, soporte y agenda",
+      "summary": "Un sistema de automatización para tres áreas: investigaciones, soporte al cliente y programación de citas.",
+      "role": "Sistemas de automatización · Flujos integrados",
+      "challenge": "El encargo era mejorar la eficiencia y la precisión en investigaciones, soportes y agendas. La investigación seguía siendo recopilar datos y redactar a mano. El soporte esperaba a una persona en las preguntas que se repiten. La agenda vivía aparte de los calendarios que el equipo ya usaba.",
+      "solution": "Construí un sistema integrado. Las investigaciones recopilan datos, ordenan el análisis y generan el informe. El soporte usa un chatbot para lo que se repite y una cola de tickets para lo que aún necesita una persona. La agenda reserva citas, envía recordatorios y los escribe en el calendario existente. Make.com y Zapier hacen el traspaso. WhatsApp es uno de los canales que el cliente ya contesta.",
+      "results": "Las tres áreas comparten un sistema. Un informe, una respuesta de soporte y un recordatorio de cita ya no dependen de que alguien vuelva a escribir los mismos datos en herramientas separadas.",
+      "highlights": [
+        "Recopilación, análisis y generación de informes de investigación",
+        "Chatbot para preguntas repetidas y cola de tickets para el resto",
+        "Reserva de citas, recordatorios e integración con calendario",
+        "Escenarios que la operación cambia sin un nuevo despliegue"
+      ]
+    },
+    "ja": {
+      "title": "調査、サポート、予定",
+      "summary": "調査、顧客サポート、予約の三領域を一つの自動化システムにまとめた。",
+      "role": "自動化システム · 統合ワークフロー",
+      "challenge": "調査、サポート、予定の効率と精度を上げる仕事だった。調査は情報収集と報告書を手で書いていた。サポートは繰り返される質問でも人を待っていた。予定は、チームがすでに使うカレンダーの外にあった。",
+      "solution": "一つの統合システムを作った。調査は情報を集め、分析を整理し、報告書を出す。サポートは繰り返される質問をチャットボットが答え、人が必要なものはチケットキューに残す。予定は予約、リマインダー、既存カレンダーへの書き込みを行う。引き渡しは Make.com と Zapier。WhatsApp は顧客がすでに返信する経路の一つ。",
+      "results": "三つの領域が一つのシステムを共有する。調査報告、サポートの返信、予約リマインダーは、同じ事実を別々の道具へ打ち直すことに頼らない。",
+      "highlights": [
+        "調査の収集、分析、報告書の生成",
+        "繰り返しの質問はチャットボット、残りはチケットキュー",
+        "予約、リマインダー、カレンダー連携",
+        "再デプロイなしで運用がシナリオを直せる"
+      ]
+    },
+    "zh": {
+      "title": "调研、客服与日程",
+      "summary": "一套自动化系统覆盖三个运营领域：调研、客户支持，以及预约日程。",
+      "role": "自动化系统 · 集成工作流",
+      "challenge": "这项工作要提高调研、客服和日程三块的效率与准确性。调研仍靠手工收集资料和写报告。客服对重复问题也在等人。日程和团队已经在用的日历是分开的。",
+      "solution": "我做了一套集成系统。调研流程收集资料、整理分析并生成报告。客服用聊天机器人回答重复问题，仍需要人的进入工单队列。日程负责预约、提醒，并写入现有日历。Make.com 和 Zapier 承担交接。WhatsApp 是客户已经会回复的渠道之一。",
+      "results": "三个领域共用一套系统。调研报告、客服回复和预约提醒，不再靠人把同一事实敲进分开的工具。",
+      "highlights": [
+        "调研的收集、分析与报告生成",
+        "重复问题由聊天机器人回答，其余进入工单队列",
+        "预约、提醒与日历集成",
+        "运营人员可以改场景，不必重新部署"
+      ]
+    }
+  }
+}

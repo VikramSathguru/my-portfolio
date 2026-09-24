@@ -30,6 +30,8 @@ export const expertiseAreas = [
     skills: [
       "React.js",
       "Next.js",
+      "Angular",
+      "Vue.js",
       "TypeScript",
       "JavaScript",
       "HTML5",
@@ -47,14 +49,20 @@ export const expertiseAreas = [
   },
   {
     id: "ecommerce",
-    skills: ["WooCommerce", "Shopify", "Payment Integration", "Order Management"],
+    skills: ["WordPress", "WooCommerce", "Shopify", "Payment Integration", "Order Management"],
+  },
+  {
+    id: "mobile",
+    skills: ["React Native", "Flutter"],
   },
   {
     id: "ai",
     skills: [
+      "Make.com",
+      "Zapier",
+      "WhatsApp Business",
       "AI Chatbots",
       "OpenAI API",
-      "ML Concepts",
       "Automated Customer Support",
     ],
   },
@@ -62,11 +70,17 @@ export const expertiseAreas = [
     id: "business",
     skills: [
       "CRM Development",
+      "SEO",
+      "Google Search Console",
       "Email Marketing Automation",
       "Google Ads API",
       "Facebook / Instagram API",
       "Analytics Integration",
     ],
+  },
+  {
+    id: "blockchain",
+    skills: ["Solana", "Ethereum", "Solidity"],
   },
 ] as const;
 

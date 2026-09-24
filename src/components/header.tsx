@@ -1,22 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { BrandLogo } from "./brand-logo";
 import { ThemeToggle } from "./theme-toggle";
 import { LanguageSwitcher } from "./language-switcher";
 import { SiteSearch } from "./site-search";
 
-const navItems = [
-  { href: "#portfolio", key: "portfolio" as const },
-  { href: "#expertise", key: "skills" as const },
-  { href: "#about", key: "about" as const },
-];
-
 export function Header() {
   const t = useTranslations("Nav");
+  const locale = useLocale();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const navItems = [
+    { href: `/${locale}#portfolio`, key: "portfolio" as const },
+    { href: "/solutions", key: "solutions" as const },
+    { href: `/${locale}#expertise`, key: "skills" as const },
+    { href: `/${locale}#about`, key: "about" as const },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -40,15 +44,29 @@ export function Header() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {navItems.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-semibold text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
-            >
-              {t(link.key)}
-            </a>
-          ))}
+          {navItems.map((link) =>
+            link.key === "solutions" ? (
+              <Link
+                key={link.href}
+                href="/solutions"
+                className={`text-sm font-semibold transition-colors hover:text-[var(--accent)] ${
+                  pathname.startsWith("/solutions")
+                    ? "text-[var(--accent)]"
+                    : "text-[var(--muted)]"
+                }`}
+              >
+                {t(link.key)}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-semibold text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+              >
+                {t(link.key)}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -56,7 +74,7 @@ export function Header() {
           <LanguageSwitcher />
           <ThemeToggle />
           <a
-            href="#portfolio"
+            href={`/${locale}#portfolio`}
             className="inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white transition hover:brightness-110"
           >
             {t("viewWork")}
@@ -93,18 +111,29 @@ export function Header() {
       {open && (
         <div className="border-t border-[var(--border)] bg-[var(--background)] px-5 py-4 md:hidden">
           <nav className="flex flex-col gap-1">
-            {navItems.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="py-2 text-base font-semibold text-[var(--foreground)]"
-              >
-                {t(link.key)}
-              </a>
-            ))}
+            {navItems.map((link) =>
+              link.key === "solutions" ? (
+                <Link
+                  key={link.href}
+                  href="/solutions"
+                  onClick={() => setOpen(false)}
+                  className="py-2 text-base font-semibold text-[var(--foreground)]"
+                >
+                  {t(link.key)}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="py-2 text-base font-semibold text-[var(--foreground)]"
+                >
+                  {t(link.key)}
+                </a>
+              ),
+            )}
             <a
-              href="#portfolio"
+              href={`/${locale}#portfolio`}
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white"
             >

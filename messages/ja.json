@@ -10,6 +10,7 @@
     "home": "Vikram Sathguru — ホーム",
     "language": "言語",
     "skills": "スキル",
+    "solutions": "ソリューション",
     "viewWork": "実績を見る"
   },
   "Search": {
@@ -53,7 +54,7 @@
   "Portfolio": {
     "eyebrow": "厳選実績",
     "title": "スクリーンショットではなくケーススタディ",
-    "description": "AIファーストEC、LATAM小売+アプリ、Pixマルチベンダー市場、フルスタックCRMの4案件。",
+    "description": "AIファーストEC、LATAM小売+アプリ、Pixマルチベンダー市場、フルスタックCRM、調査・サポート・予定の自動化の5案件。",
     "empty": "このカテゴリのプロジェクトはまだありません。",
     "filters": {
       "all": "すべて",
@@ -71,7 +72,7 @@
     "areas": {
       "frontend": {
         "title": "フロントエンド",
-        "description": "モダンなReactアーキテクチャによる直感的でレスポンシブなUI。"
+        "description": "React、Next.js、Angular、Vue によるレスポンシブな画面。"
       },
       "backend": {
         "title": "バックエンド",
@@ -83,21 +84,30 @@
       },
       "ecommerce": {
         "title": "EC",
-        "description": "カタログからチェックアウト、注文管理までのコマース運用。"
+        "description": "WordPress、WooCommerce、Shopify — カタログ、決済、注文管理。"
       },
       "ai": {
         "title": "AI・自動化",
-        "description": "手作業を減らしサポートを強化するインテリジェントな仕組み。"
+        "description": "Make.com と Zapier のワークフロー、WhatsApp のメッセージ、繰り返しのサポートを減らすアシスタント。"
+      },
+      "mobile": {
+        "title": "モバイル",
+        "description": "Webと同じアカウントと注文に繋がる React Native と Flutter のアプリ。"
       },
       "business": {
         "title": "業務システム",
-        "description": "CRM、マーケティング連携、運用を支える自動化。"
+        "description": "CRM、SEO、Google Search Console と、チームの運用を支える連携。"
+      },
+      "blockchain": {
+        "title": "ブロックチェーン",
+        "description": "共有記録を検証できる状態に保つ、Solidity による Solana と Ethereum のアプリケーション。"
       }
     },
     "coreTitle": "コアスキル",
     "coreDescription": "クライアント案件で最も使うツールの習熟度。",
     "stackTitle": "技術スタック",
-    "stackDescription": "領域別に整理した技術 — 上の習熟度バーとは別に、システムの構成を示します。"
+    "stackDescription": "領域別に整理した技術 — 上の習熟度バーとは別に、システムの構成を示します。",
+    "solutionsCta": "ソリューションを見る"
   },
   "About": {
     "eyebrow": "自己紹介",
@@ -154,12 +164,6 @@
     "rights": "無断転載を禁じます。",
     "backToTop": "ページ上部へ"
   },
-  "Featured": {
-    "eyebrow": "実力の証明",
-    "title": "設計・納品した注目システム",
-    "description": "ケースを開くと、課題・アーキテクチャ・画面・ローンチ後の運用まで確認できます。",
-    "viewCase": "ケースを開く"
-  },
   "CaseStudy": {
     "challenge": "課題",
     "solution": "ソリューション",
@@ -169,5 +173,26 @@
     "gallery": "プロダクト画面",
     "cmsNote": "CMSメディアとして管理された画面 — 各案件のランディング、ストア、管理画面。",
     "back": "ポートフォリオへ戻る"
+  },
+  "Solutions": {
+    "eyebrow": "マイソリューション",
+    "title": "結果を出す仕組み",
+    "description": "ここで扱うのは技術名の一覧ではなく、ウェブサイト、オンラインストア、CRM、顧客獲得、自動化、モバイルアプリ、ブロックチェーン、SEOです。各ページは、その仕組みが結果を出すために何が必要かを示します。",
+    "open": "このソリューションを開く",
+    "back": "すべてのソリューション",
+    "necessity": "なぜ必要か",
+    "importance": "仕事の中でなぜ重要か",
+    "uses": "どこに現れるか",
+    "related": "関連するソリューション",
+    "outcomes": "何が変わるか",
+    "standard": "正しいやり方",
+    "similar": "類似の実績",
+    "similarCta": "プロジェクトを見る",
+    "groups": {
+      "interface": "インターフェース",
+      "backend": "バックエンド",
+      "data": "データ",
+      "intelligence": "インテリジェンス"
+    }
   }
 }
