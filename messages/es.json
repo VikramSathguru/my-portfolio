@@ -11,13 +11,20 @@
     "language": "Idioma",
     "skills": "Skills",
     "solutions": "Mis soluciones",
-    "viewWork": "Ver trabajos"
+    "viewWork": "Ver trabajos",
+    "homeLabel": "Inicio",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "contact": "Contacto"
   },
   "Search": {
     "label": "Buscar portafolio",
     "placeholder": "Buscar…",
     "searching": "Buscando…",
-    "empty": "Sin resultados"
+    "empty": "Sin resultados",
+    "missingKey": "La búsqueda con IA aún no está configurada. Se muestran coincidencias de texto.",
+    "error": "La búsqueda no pudo responder ahora.",
+    "limited": "Demasiadas búsquedas desde esta red. Espera un minuto."
   },
   "Hero": {
     "ctaPortfolio": "Ver cases",
@@ -159,6 +166,7 @@
     "location": "Singapur · Remoto a nivel mundial"
   },
   "Footer": {
+    "title": "Trabajemos juntos",
     "blurb": "Desarrollador Full Stack Senior — e-commerce, marketplaces, CRM y automatización con IA con handoff listo para operar.",
     "navigate": "Navegar",
     "rights": "Todos los derechos reservados.",
@@ -177,7 +185,7 @@
   "Solutions": {
     "eyebrow": "Mis soluciones",
     "title": "Sistemas que producen un resultado",
-    "description": "Estos son los sistemas que construyo — sitios, tiendas online, CRM, adquisición de clientes, automatización, apps, blockchain y SEO. Cada página muestra qué tiene que estar en su lugar para que el sistema produzca un resultado.",
+    "description": "Estos son los sistemas que construyo — sitios, tiendas online, CRM, adquisición de clientes, automatización, apps, blockchain y SEO. Cada página es una propuesta para el cliente: lo que recibes, cómo corre el trabajo y las preguntas que hace el comprador.",
     "open": "Abrir esta solución",
     "back": "Todas las soluciones",
     "necessity": "Por qué es necesaria",
@@ -188,11 +196,36 @@
     "standard": "Cómo se hace bien",
     "similar": "Trabajo similar",
     "similarCta": "Ver proyecto",
+    "proposal": "Propuesta",
+    "situation": "La situación",
+    "gets": "Lo que recibes",
+    "process": "Proceso y plazo",
+    "proof": "Prueba",
+    "proofCta": "Abrir un ejemplo entregado",
+    "investment": "Inversión",
+    "next": "Siguiente paso",
+    "terms": "Términos",
+    "guarantee": "Garantía",
+    "faq": "Preguntas que hace el cliente",
     "groups": {
       "interface": "Interfaz",
       "backend": "Backend",
       "data": "Datos",
       "intelligence": "Inteligencia"
     }
+  },
+  "Chat": {
+    "label": "Preguntar por mi trabajo",
+    "title": "Preguntar sobre el portafolio",
+    "close": "Cerrar chat",
+    "placeholder": "Por ejemplo: necesito e-commerce",
+    "send": "Enviar",
+    "greeting": "¿Qué necesitas?",
+    "lookAt": "Mira {title} en mis ejemplos.",
+    "unsure": "Dime el tipo de trabajo, en tu idioma. Por ejemplo: e-commerce, un sitio, un CRM o automatización.",
+    "intro": "Pregunta por los casos, la tecnología o cómo corre un proyecto. Las respuestas se quedan en este portafolio.",
+    "error": "El asistente no pudo responder ahora. Inténtalo en un momento.",
+    "missingKey": "El asistente aún no está configurado. Agrega DEEPSEEK_API_KEY en el servidor.",
+    "limited": "Demasiadas preguntas desde esta red. Espera un minuto."
   }
 }

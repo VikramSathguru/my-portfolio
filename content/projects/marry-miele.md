@@ -1,0 +1,242 @@
+---
+id: marry-miele
+slug: marry-miele
+featured: true
+order: 1
+categories:
+  - ecommerce
+  - ai
+  - uiux
+  - web
+cover: /portfolio/marry-miele/landing.png
+tech:
+  - Next.js
+  - Headless CMS
+  - WooCommerce APIs
+  - TikTok API
+  - Instagram API
+  - Mercado Livre API
+  - Responsive UI
+metrics:
+  - value: AI-first
+    label:
+      en: Discovery-ready storefront
+      pt: Vitrine pronta para descoberta
+      es: Escaparate listo para descubrimiento
+      ja: 発見に強いストアフロント
+      zh: 面向发现的店面
+  - value: 30–40
+    label:
+      en: Launch catalog models
+      pt: Modelos no catálogo de lançamento
+      es: Modelos en catálogo de lanzamiento
+      ja: ローンチ時カタログ型数
+      zh: 上线目录款式数
+  - value: 3 APIs
+    label:
+      en: TikTok · Instagram · Mercado Livre
+      pt: TikTok · Instagram · Mercado Livre
+      es: TikTok · Instagram · Mercado Livre
+      ja: TikTok · Instagram · Mercado Livre
+      zh: TikTok · Instagram · Mercado Livre
+  - value: CMS
+    label:
+      en: Team updates without deploys
+      pt: Equipe atualiza sem deploy
+      es: El equipo actualiza sin deploys
+      ja: デプロイなしでチーム更新
+      zh: 团队无需发版即可更新
+gallery:
+  - src: /portfolio/marry-miele/landing.png
+    alt:
+      en: Marry Miele Boutique landing page
+      pt: Landing page da Marry Miele Boutique
+      es: Landing page de Marry Miele Boutique
+      ja: Marry Miele Boutique ランディングページ
+      zh: Marry Miele Boutique 落地页
+    label:
+      en: Landing
+      pt: Landing
+      es: Landing
+      ja: ランディング
+      zh: 落地页
+  - src: /portfolio/marry-miele/shop.png
+    alt:
+      en: Marry Miele Boutique store/catalog page
+      pt: Página de loja/catálogo Marry Miele
+      es: Página de tienda/catálogo Marry Miele
+      ja: Marry Miele ショップ/カタログページ
+      zh: Marry Miele 商店/目录页
+    label:
+      en: Store
+      pt: Loja
+      es: Tienda
+      ja: ストア
+      zh: 商店
+---
+<!-- Edit the matching language section. Keep the title, summary, role, challenge, solution, results, and highlights headings. -->
+
+# locale:en
+
+## title
+
+Marry Miele Boutique
+
+## summary
+
+AI-first women’s fashion e-commerce with CMS-managed catalog, rich product pages, and social/marketplace integrations.
+
+## role
+
+Full-stack product engineering · UX · CMS architecture
+
+## challenge
+
+Build a responsive fashion store that is easy for the team to update, optimized for modern AI search visibility, and expandable through TikTok, Instagram, and Mercado Livre — without locking the brand into a rigid template.
+
+## solution
+
+Designed an elegant storefront system with CMS-driven collections, dedicated product pages (colors, sizes, real measurements), and integration-ready APIs for social commerce. The UX prioritizes conversion, trust, and editorial product storytelling.
+
+## results
+
+Owner-ready boutique commerce: staff can publish products and collections independently, shoppers get measurement-aware PDPs, and growth channels (social + Mercado Livre) sit on a clean integration path.
+
+## highlights
+
+- CMS-managed catalog for autonomous product updates
+- Dedicated product pages with variants and measurement notes
+- Integration paths for TikTok, Instagram, and Mercado Livre
+- Responsive luxury UX across mobile and desktop
+
+# locale:pt
+
+## title
+
+Marry Miele Boutique
+
+## summary
+
+E-commerce de moda feminina AI-first com catálogo gerido por CMS, páginas de produto ricas e integrações sociais/marketplace.
+
+## role
+
+Engenharia full-stack · UX · Arquitetura de CMS
+
+## challenge
+
+Criar uma loja responsiva, fácil de atualizar pela equipe, otimizada para visibilidade em buscas com IA e expansível via TikTok, Instagram e Mercado Livre — sem prender a marca a um template rígido.
+
+## solution
+
+Desenvolvi um sistema de vitrine elegante com coleções via CMS, páginas dedicadas de produto (cores, tamanhos, medidas reais) e APIs prontas para social commerce. A UX prioriza conversão, confiança e narrativa editorial.
+
+## results
+
+E-commerce boutique pronto para a dona: a equipe publica produtos e coleções sozinha, o comprador vê PDPs com medidas reais, e canais de crescimento (social + Mercado Livre) ficam com integração clara.
+
+## highlights
+
+- Catálogo gerido por CMS para atualizações autônomas
+- Páginas de produto com variantes e medidas reais
+- Integrações com TikTok, Instagram e Mercado Livre
+- UX luxuosa e responsiva em mobile e desktop
+
+# locale:es
+
+## title
+
+Marry Miele Boutique
+
+## summary
+
+E-commerce de moda femenina AI-first con catálogo CMS, fichas de producto ricas e integraciones sociales/marketplace.
+
+## role
+
+Ingeniería full-stack · UX · Arquitectura CMS
+
+## challenge
+
+Construir una tienda responsive, fácil de actualizar por el equipo, optimizada para visibilidad en búsquedas con IA y expandable vía TikTok, Instagram y Mercado Livre.
+
+## solution
+
+Diseñé un sistema de escaparate elegante con colecciones CMS, páginas de producto dedicadas y APIs listas para social commerce. La UX prioriza conversión, confianza y storytelling editorial.
+
+## results
+
+Comercio boutique listo para la dueña: el equipo publica productos y colecciones solo, el comprador ve PDPs con medidas reales, y los canales de crecimiento quedan con integración clara.
+
+## highlights
+
+- Catálogo CMS para actualizaciones autónomas
+- Fichas de producto con variantes y medidas reales
+- Integraciones TikTok, Instagram y Mercado Livre
+- UX de lujo responsive en móvil y escritorio
+
+# locale:ja
+
+## title
+
+Marry Miele Boutique
+
+## summary
+
+CMS管理カタログ、豊富な商品ページ、SNS/マーケット連携を備えたAIファースト女性ファッションEC。
+
+## role
+
+フルスタック開発 · UX · CMS設計
+
+## challenge
+
+チームが自律更新でき、AI検索可視性に強く、TikTok/Instagram/Mercado Livreへ拡張可能なレスポンシブ店舗を構築すること。
+
+## solution
+
+CMS駆動のコレクション、色・サイズ・実寸対応の商品ページ、ソーシャルコマース向けAPI基盤を持つ上品なストアフロントを設計。
+
+## results
+
+オーナーが運用できるブティックEC：チームが自律的に商品/コレクションを公開し、実寸対応PDPとSNS/メルカドリブレ連携の土台を整備。
+
+## highlights
+
+- 自律更新可能なCMSカタログ
+- バリアントと実寸メモ付き商品ページ
+- TikTok / Instagram / Mercado Livre 連携
+- モバイル〜デスクトップのラグジュアリーUX
+
+# locale:zh
+
+## title
+
+Marry Miele Boutique
+
+## summary
+
+以 AI 优先的女装电商：CMS 管理目录、丰富商品页与社交/市场平台集成。
+
+## role
+
+全栈工程 · UX · CMS 架构
+
+## challenge
+
+打造团队可自主更新、面向 AI 搜索可见性、并可扩展至 TikTok、Instagram 与 Mercado Livre 的响应式商店。
+
+## solution
+
+设计优雅店面系统：CMS 驱动的系列、含颜色/尺码/实测尺寸的商品页，以及面向社交电商的 API 基础。
+
+## results
+
+店主可自主运营的精品电商：团队可独立发布商品与系列，买家获得含实测尺寸的商品页，社交与 Mercado Livre 增长通道具备清晰集成路径。
+
+## highlights
+
+- CMS 管理目录，支持自主更新
+- 含变体与实测尺寸的商品页
+- TikTok / Instagram / Mercado Livre 集成路径
+- 覆盖移动与桌面的奢华响应式体验

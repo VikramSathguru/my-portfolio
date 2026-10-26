@@ -2,7 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { localeLabels, routing, type AppLocale } from "@/i18n/routing";
+import { LOCALE_COOKIE, localeLabels, routing, type AppLocale } from "@/i18n/routing";
 
 export function LanguageSwitcher() {
   const locale = useLocale() as AppLocale;
@@ -16,6 +16,8 @@ export function LanguageSwitcher() {
         value={locale}
         onChange={(event) => {
           const next = event.target.value as AppLocale;
+          const secure = window.location.protocol === "https:" ? "; Secure" : "";
+          document.cookie = `${LOCALE_COOKIE}=${next}; Path=/; Max-Age=31536000; SameSite=Lax${secure}`;
           router.replace(pathname, { locale: next });
         }}
         className="h-10 appearance-none rounded-full border border-[var(--border)] bg-[var(--surface)] py-0 pr-8 pl-3 text-sm font-semibold text-[var(--foreground)] outline-none transition hover:border-[var(--accent)]"

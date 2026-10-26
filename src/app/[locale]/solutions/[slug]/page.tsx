@@ -9,6 +9,8 @@ import { getSolution, localeText, solutionSlugs } from "@/data/solutions";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     solutionSlugs.map((slug) => ({ locale, slug })),

@@ -8,6 +8,8 @@ export const routing = defineRouting({
 
 export type AppLocale = (typeof routing.locales)[number];
 
+export const LOCALE_COOKIE = "NEXT_LOCALE";
+
 export const localeLabels: Record<AppLocale, string> = {
   en: "English",
   pt: "Português",

@@ -4,6 +4,8 @@ import { getProjectSlugs } from "@/lib/cms/projects";
 import { solutionSlugs } from "@/data/solutions";
 import { siteConfig } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.getSiteUrl();
   const slugs = await getProjectSlugs();
@@ -11,14 +13,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   for (const locale of routing.locales) {
     entries.push({
-      url: `${base}/${locale}`,
+      url: `${base}/${locale}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     });
 
     entries.push({
-      url: `${base}/${locale}/solutions`,
+      url: `${base}/${locale}/solutions/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
@@ -26,7 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const slug of solutionSlugs) {
       entries.push({
-        url: `${base}/${locale}/solutions/${slug}`,
+        url: `${base}/${locale}/solutions/${slug}/`,
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.6,
@@ -35,7 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const slug of slugs) {
       entries.push({
-        url: `${base}/${locale}/work/${slug}`,
+        url: `${base}/${locale}/work/${slug}/`,
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.8,

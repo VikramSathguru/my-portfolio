@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack && node scripts/write-locale-gate.mjs",
     "start": "next start",
     "lint": "eslint"
   },
@@ -13,6 +13,7 @@
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.57.4",
     "framer-motion": "^13.2.0",
+    "gray-matter": "^4.0.3",
     "next": "16.3.4",
     "next-intl": "^4.14.2",
     "next-themes": "^0.4.6",

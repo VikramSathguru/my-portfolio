@@ -7,6 +7,8 @@ import { SolutionsIndex } from "@/components/solutions/solutions-index";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

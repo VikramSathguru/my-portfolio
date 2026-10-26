@@ -10,6 +10,8 @@ import { localizeProject } from "@/lib/cms/localize";
 import { routing, type AppLocale } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const slugs = await getProjectSlugs();
   return routing.locales.flatMap((locale) =>

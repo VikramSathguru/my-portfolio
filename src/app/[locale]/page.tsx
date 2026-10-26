@@ -1,8 +1,8 @@
-import { Header } from "@/components/header";
+import { HomeFrame } from "@/components/home-frame";
 import { Hero } from "@/components/hero";
 import { Portfolio } from "@/components/portfolio";
 import { Expertise } from "@/components/expertise";
-import { About } from "@/components/about";
+import { AboutPath, AboutStory } from "@/components/about";
 import { Footer } from "@/components/footer";
 import { PageTransition } from "@/components/page-transition";
 import { setRequestLocale } from "next-intl/server";
@@ -20,14 +20,16 @@ export default async function HomePage({
 
   return (
     <PageTransition>
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Portfolio projects={projects} />
-        <Expertise />
-        <About />
-      </main>
-      <Footer />
+      <HomeFrame>
+        <main className="flex-1">
+          <Hero />
+          <AboutStory />
+          <Expertise />
+          <Portfolio projects={projects} />
+          <AboutPath />
+        </main>
+        <Footer />
+      </HomeFrame>
     </PageTransition>
   );
 }

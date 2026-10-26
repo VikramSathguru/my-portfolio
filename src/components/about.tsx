@@ -1,139 +1,142 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { m } from "@/components/motion";
-import {
-  experienceHighlightKeys,
-  processSteps,
-  stats,
-} from "@/data/portfolio";
+import { experienceHighlightKeys, site } from "@/data/portfolio";
 
-export function About() {
+const bioPoints = ["pointNus", "pointPhd", "pointRole"] as const;
+
+export function AboutStory() {
   const t = useTranslations("About");
+  const tHero = useTranslations("Hero");
+
+  const chips = [t("location"), t("company"), t("school")];
 
   return (
-    <section id="about" className="content-auto scroll-mt-24 py-20 sm:py-28">
+    <section id="about" className="scroll-mt-28 py-12 sm:py-16">
       <div className="site-container px-5 sm:px-8">
-        <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:gap-14">
           <div>
-            <p className="mb-3 text-sm font-medium tracking-[0.16em] text-[var(--accent)] uppercase">
-              {t("eyebrow")}
-            </p>
-            <h2 className="font-display text-3xl leading-tight font-semibold tracking-tight text-[var(--foreground)] sm:text-5xl">
-              {t("title")}
+            <p className="section-kicker">{t("eyebrow")}</p>
+            <h2 className="font-display mt-3 text-4xl leading-[1.05] font-semibold tracking-tight text-[var(--foreground)] sm:text-5xl">
+              {site.fullName}
             </h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              {t("p1")}
-            </p>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              {t("p2")}
-            </p>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              {t("p3")}
-            </p>
-
-            <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-[var(--border)] pt-8">
-              {stats.map((stat) => (
-                <div key={stat.labelKey}>
-                  <dt className="font-display text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-4xl">
-                    {stat.value}
-                  </dt>
-                  <dd className="mt-1 text-xs text-[var(--muted)] sm:text-sm">
-                    {t(`stats.${stat.labelKey}`)}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-
-            <div className="mt-12">
-              <p className="mb-4 text-sm font-medium tracking-[0.16em] text-[var(--accent)] uppercase">
-                {t("experienceEyebrow")}
-              </p>
-              <div className="border-t border-[var(--border)] pt-5">
-                <h3 className="font-display text-xl font-semibold text-[var(--foreground)]">
-                  {t("jobTitle")}
-                </h3>
-                <p className="mt-1 text-sm font-medium text-[var(--muted)]">
-                  {t("company")}
-                </p>
-                <ul className="mt-4 space-y-3">
-                  {experienceHighlightKeys.map((key) => (
-                    <li
-                      key={key}
-                      className="text-sm leading-relaxed text-[var(--muted)]"
-                    >
-                      {t(`highlights.${key}`)}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <p className="mt-4 text-lg font-medium text-[var(--foreground)] sm:text-xl">{t("title")}</p>
+            <p className="mt-3 text-base font-medium text-[var(--kicker)]">{tHero("slides.bio.headline")}</p>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--muted)]">{tHero("slides.bio.tagline")}</p>
+            <div className="mt-5 max-w-xl space-y-4 text-base leading-relaxed text-[var(--muted)]">
+              <p>{t("p1")}</p>
+              <p>{t("p2")}</p>
+              <p>{t("p3")}</p>
             </div>
+            <ul className="mt-6 max-w-xl space-y-3">
+              {bioPoints.map((key) => (
+                <li key={key} className="flex gap-3 text-sm leading-relaxed text-[var(--foreground)] sm:text-base">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--kicker)]" aria-hidden />
+                  <span>{tHero(`slides.bio.${key}`)}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="space-y-12">
-            <div>
-              <p className="mb-6 text-sm font-medium tracking-[0.16em] text-[var(--accent)] uppercase">
-                {t("processEyebrow")}
-              </p>
-              <ol>
-                {processSteps.map((step, index) => (
-                  <m.li
-                    key={step}
-                    initial={{ opacity: 0, x: 16 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-30px" }}
-                    transition={{
-                      duration: 0.45,
-                      delay: index * 0.06,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                    className="grid grid-cols-[auto_1fr] gap-5 border-b border-[var(--border)] py-5"
-                  >
-                    <span className="font-mono text-sm text-[var(--accent)]">
-                      {step}
-                    </span>
-                    <div>
-                      <h3 className="font-display text-lg font-semibold text-[var(--foreground)]">
-                        {t(`process.${step}.title`)}
-                      </h3>
-                      <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-                        {t(`process.${step}.text`)}
-                      </p>
-                    </div>
-                  </m.li>
-                ))}
-              </ol>
+          <div className="mx-auto w-full max-w-md">
+            <div className="relative px-6 py-5">
+              <div className="orbit" aria-hidden />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] shadow-[0_24px_60px_var(--shadow)]">
+                <Image
+                  src="/images/vikram-graduation.jpg"
+                  alt={tHero("slides.bio.imageAlt")}
+                  fill
+                  sizes="(max-width: 1024px) 80vw, 380px"
+                  className="object-cover object-[center_18%]"
+                />
+                <div className="absolute inset-x-4 bottom-4 rounded-2xl bg-[var(--glass-strong)] px-3 py-2 text-center text-xs font-semibold text-[var(--foreground)] backdrop-blur-md">
+                  {t("jobTitle")}
+                </div>
+              </div>
             </div>
-
-            <div>
-              <p className="mb-6 text-sm font-medium tracking-[0.16em] text-[var(--accent)] uppercase">
-                {t("educationEyebrow")}
-              </p>
-              <ul>
-                <li className="border-b border-t border-[var(--border)] py-5">
-                  <h3 className="font-display text-lg font-semibold text-[var(--foreground)]">
-                    {t("masters")}
-                  </h3>
-                  <p className="mt-1 text-sm text-[var(--muted)]">{t("school")}</p>
-                  <p className="mt-1 text-sm text-[var(--muted)]">
-                    {t("mastersPeriod")} · {t("singapore")}
-                  </p>
+            <ul className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+              {chips.map((chip) => (
+                <li
+                  key={chip}
+                  className="glass-tile px-3 py-2 text-center text-xs leading-snug font-semibold text-[var(--foreground)]"
+                >
+                  {chip}
                 </li>
-                <li className="border-b border-[var(--border)] py-5">
-                  <h3 className="font-display text-lg font-semibold text-[var(--foreground)]">
-                    {t("bachelors")}
-                  </h3>
-                  <p className="mt-1 text-sm text-[var(--muted)]">{t("school")}</p>
-                  <p className="mt-1 text-sm text-[var(--muted)]">
-                    {t("bachelorsPeriod")} · {t("singapore")}
-                  </p>
-                </li>
-              </ul>
-              <p className="mt-6 text-sm text-[var(--muted)]">{t("location")}</p>
-            </div>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+export function AboutPath() {
+  const t = useTranslations("About");
+
+  const degrees = [
+    {
+      title: t("masters"),
+      period: t("mastersPeriod"),
+    },
+    {
+      title: t("bachelors"),
+      period: t("bachelorsPeriod"),
+    },
+  ];
+
+  return (
+    <>
+      <section id="education" className="scroll-mt-28 py-12 sm:py-16">
+        <div className="site-container px-5 sm:px-8">
+          <p className="section-kicker">05 · {t("educationEyebrow")}</p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {degrees.map((degree) => (
+              <article key={degree.title} className="glass-panel p-6 sm:p-7">
+                <p className="section-kicker">{degree.period}</p>
+                <h2 className="font-display mt-3 text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+                  {degree.title}
+                </h2>
+                <p className="mt-3 text-sm text-[var(--muted)]">{t("school")}</p>
+                <p className="mt-1 text-sm text-[var(--muted)]">{t("singapore")}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-[var(--muted)]">{t("location")}</p>
+        </div>
+      </section>
+
+      <section id="experience" className="scroll-mt-28 py-4 pb-12 sm:pb-16">
+        <div className="site-container px-5 sm:px-8">
+          <p className="section-kicker">06 · {t("experienceEyebrow")}</p>
+          <div className="glass-panel mt-6 p-6 sm:p-8">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
+              {t("jobTitle")}
+            </h2>
+            <p className="mt-1 text-sm font-semibold text-[var(--kicker)]">{t("company")}</p>
+            <ol className="relative mt-8 space-y-5 border-l border-[var(--border-strong)] pl-6">
+              {experienceHighlightKeys.map((key, index) => (
+                <m.li
+                  key={key}
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-30px" }}
+                  transition={{ duration: 0.4, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
+                  className="relative text-sm leading-relaxed text-[var(--muted)]"
+                >
+                  <span
+                    className="absolute top-1.5 -left-[1.85rem] h-3 w-3 rounded-full bg-[var(--accent)] shadow-[0_0_12px_var(--accent)]"
+                    aria-hidden
+                  />
+                  {t(`highlights.${key}`)}
+                </m.li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

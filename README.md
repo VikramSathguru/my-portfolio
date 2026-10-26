@@ -48,6 +48,7 @@ Supported locales: **English (`en`)**, **Portuguese (`pt`)**, **Spanish (`es`)**
 - URLs: `/en`, `/pt`, `/es`, `/ja`, `/zh`
 - Translations live in `messages/*.json`
 - Switch language from the header dropdown
+- The saved `NEXT_LOCALE` cookie takes priority. Without a saved choice, the site uses the visitor country supplied by the hosting proxy (Vercel, Cloudflare, or Netlify) to choose Portuguese, Spanish, Japanese, or Chinese; other or unavailable countries default to English.
 
 ## Workana-safe contact policy
 

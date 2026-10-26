@@ -1,0 +1,241 @@
+---
+id: painel-gods
+slug: painel-gods
+featured: true
+order: 3
+categories:
+  - ecommerce
+  - web
+  - uiux
+cover: /portfolio/painel-gods/landing.png
+tech:
+  - WordPress
+  - WooCommerce
+  - Dokan / WCFM
+  - Pix Split
+  - Asaas / Iugu
+  - MySQL
+  - Vendor Dashboards
+metrics:
+  - value: Split Pix
+    label:
+      en: Seller subaccounts + platform fee
+      pt: Subcontas do vendedor + taxa da plataforma
+      es: Subcuentas de vendedor + fee de plataforma
+      ja: 出品者サブ口座＋平台手数料
+      zh: 卖家子账户 + 平台佣金
+  - value: 7–14d
+    label:
+      en: Payout hold for MED/refunds
+      pt: Carência de saque para MED/reembolsos
+      es: Retención de retiro para MED/reembolsos
+      ja: MED/返金向け出金保留
+      zh: MED/退款出金冻结期
+  - value: Dokan
+    label:
+      en: Vendor dashboard + buyer chat
+      pt: Painel do vendedor + chat comprador
+      es: Panel de vendedor + chat comprador
+      ja: 出品者ダッシュボード＋購入者チャット
+      zh: 卖家后台 + 买家聊天
+  - value: Moderation
+    label:
+      en: Manual listing approval gate
+      pt: Aprovação manual de anúncios
+      es: Aprobación manual de anuncios
+      ja: リスティング手動承認
+      zh: 上架人工审核
+gallery:
+  - src: /portfolio/painel-gods/landing.png
+    alt:
+      en: Painel Gods marketplace landing
+      pt: Landing do marketplace Painel Gods
+      es: Landing del marketplace Painel Gods
+      ja: Painel Gods マーケットプレイス
+      zh: Painel Gods 市场落地页
+    label:
+      en: Landing
+      pt: Landing
+      es: Landing
+      ja: ランディング
+      zh: 落地页
+  - src: /portfolio/painel-gods/shop.png
+    alt:
+      en: Painel Gods shop/catalog experience
+      pt: Experiência de loja/catálogo Painel Gods
+      es: Experiencia de tienda/catálogo Painel Gods
+      ja: Painel Gods ショップ体験
+      zh: Painel Gods 商店体验
+    label:
+      en: Store
+      pt: Loja
+      es: Tienda
+      ja: ストア
+      zh: 商店
+---
+<!-- Edit the matching language section. Keep the title, summary, role, challenge, solution, results, and highlights headings. -->
+
+# locale:en
+
+## title
+
+Painel Gods Marketplace
+
+## summary
+
+Multi-vendor digital marketplace with Pix split payments, seller dashboards, dispute holds, and moderated listings.
+
+## role
+
+Marketplace architecture · Payments · Vendor UX
+
+## challenge
+
+Configure a legally/financially safe multi-vendor marketplace on the client’s hosting where Pix split sends funds to seller subaccounts and only commission hits the platform CNPJ — with retention windows for MED/refunds and manual listing approval.
+
+## solution
+
+Structured WordPress + WooCommerce + Dokan/WCFM vendor panels, chat, moderation workflow, and split-payment gateway configuration (Asaas/Iugu). UX emphasizes trust, speed, and clear seller/buyer journeys.
+
+## results
+
+A marketplace money-flow the owner can defend: Pix split to sellers, commission only on the platform CNPJ, retention for disputes, and moderated listings before they go live.
+
+## highlights
+
+- Multi-vendor dashboards and internal chat
+- Native Pix split to seller subaccounts
+- Balance retention rules for refunds/MED
+- Manual listing moderation for quality control
+
+# locale:pt
+
+## title
+
+Marketplace Painel Gods
+
+## summary
+
+Marketplace multi-vendedor com split Pix, painéis de vendedor, carência para disputas e anúncios moderados.
+
+## role
+
+Arquitetura de marketplace · Pagamentos · UX do vendedor
+
+## challenge
+
+Estruturar marketplace seguro na hospedagem do cliente, com split Pix para subcontas dos vendedores e comissão no CNPJ da plataforma — com carência para reembolsos/MED e aprovação manual de anúncios.
+
+## solution
+
+WordPress + WooCommerce + Dokan/WCFM, chat, moderação e gateway de split (Asaas/Iugu). UX focada em confiança, velocidade e jornadas claras.
+
+## results
+
+Fluxo financeiro de marketplace defensável: split Pix aos vendedores, comissão só no CNPJ da plataforma, carência para disputas e anúncios moderados antes de publicar.
+
+## highlights
+
+- Painéis multi-vendedor e chat interno
+- Split Pix nativo para subcontas
+- Retenção de saldo para reembolsos/MED
+- Moderação manual de anúncios
+
+# locale:es
+
+## title
+
+Marketplace Painel Gods
+
+## summary
+
+Marketplace multi-vendedor con split Pix, paneles de vendedor, retención para disputas y anuncios moderados.
+
+## role
+
+Arquitectura marketplace · Pagos · UX de vendedor
+
+## challenge
+
+Configurar un marketplace seguro en el hosting del cliente, con split Pix a subcuentas y comisión al CNPJ — con retención para reembolsos/MED y aprobación manual.
+
+## solution
+
+WordPress + WooCommerce + Dokan/WCFM, chat, moderación y gateway de split. UX centrada en confianza y velocidad.
+
+## results
+
+Flujo de dinero de marketplace defendible: split Pix a vendedores, comisión solo al CNPJ, retención para disputas y anuncios moderados antes de publicar.
+
+## highlights
+
+- Paneles multi-vendedor y chat interno
+- Split Pix nativo a subcuentas
+- Retención de saldo para reembolsos/MED
+- Moderación manual de anuncios
+
+# locale:ja
+
+## title
+
+Painel Gods マーケットプレイス
+
+## summary
+
+Pixスプリット決済、出品者ダッシュボード、紛争保留、審査制リスティングのマルチベンダー市場。
+
+## role
+
+マーケット設計 · 決済 · 出品者UX
+
+## challenge
+
+クライアントホスティング上で、Pixスプリットと保留ルール、手動審査を備えた安全なマルチベンダー基盤を構築すること。
+
+## solution
+
+WordPress + WooCommerce + Dokan/WCFM、チャット、モデレーション、スプリットゲートウェイを構成。信頼と速度を重視。
+
+## results
+
+説明可能なマーケット資金フロー：出品者へのPixスプリット、平台CNPJへの手数料のみ、紛争保留、公開前の審査。
+
+## highlights
+
+- マルチベンダーダッシュボードとチャット
+- 出品者サブ口座へのPixスプリット
+- 返金/MED向け残高保留
+- 手動リスティング審査
+
+# locale:zh
+
+## title
+
+Painel Gods 多商户市场
+
+## summary
+
+支持 Pix 分账、卖家后台、争议冻结与人工审核上架的多商户数字市场。
+
+## role
+
+市场架构 · 支付 · 卖家体验
+
+## challenge
+
+在客户自有主机上构建法律与资金安全的多商户市场：Pix 分账至卖家子账户，平台仅收佣金，并设置冻结期与人工审核。
+
+## solution
+
+配置 WordPress + WooCommerce + Dokan/WCFM、聊天、审核流程与分账网关，强调信任与效率。
+
+## results
+
+可辩护的市场资金流：Pix 分账至卖家、平台 CNPJ 仅收佣金、争议冻结，以及上线前人工审核。
+
+## highlights
+
+- 多商户后台与站内聊天
+- Pix 原生分账至卖家子账户
+- 退款/争议余额冻结规则
+- 新上架人工审核

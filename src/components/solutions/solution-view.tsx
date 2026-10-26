@@ -1,9 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SolutionProjectAd } from "@/components/solutions/solution-project-ad";
+import { SolutionProposal } from "@/components/solutions/solution-proposal";
 import { SolutionSplit } from "@/components/solutions/solution-split";
 import { getSolution, localeText, type Solution } from "@/data/solutions";
-import { solutionPageHero, solutionPagePart } from "@/data/solution-page-images";
+import { solutionPageHero } from "@/data/solution-page-images";
 import { solutionVisuals } from "@/data/solution-visuals";
 import { getProjectBySlug } from "@/lib/cms/projects";
 import type { AppLocale } from "@/i18n/routing";
@@ -57,49 +58,24 @@ export async function SolutionView({
         </SolutionSplit>
       </div>
 
-      <section className="mt-16">
-        <h2 className="solution-kicker">{t("outcomes")}</h2>
-        <ul className="solution-points mt-6">
-          {solution.outcomes.map((item) => (
-            <li key={item.en} className="solution-point">
-              {localeText(item, locale)}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="solution-panel mt-12">
-        <h2 className="font-display text-2xl font-semibold tracking-tight text-[var(--foreground)]">
-          {t("standard")}
-        </h2>
-        <p className="solution-muted mt-4 max-w-3xl">{localeText(solution.standard, locale)}</p>
-      </section>
-
-      <div className="mt-16 flex flex-col gap-16 sm:gap-20">
-        {solution.parts.map((part, index) => {
-          const title = localeText(part.title, locale);
-          return (
-            <SolutionSplit
-              key={part.id}
-              art={part.art}
-              label={title}
-              imageSlug={solution.slug}
-              imageSrc={solutionPagePart(solution.slug, part.id)}
-              reversed={index % 2 === 1}
-              deferred
-              showEmoji={false}
-            >
-              <h2 className="font-display text-3xl font-semibold tracking-tight text-[var(--foreground)]">
-                {title}
-              </h2>
-              <h3 className="solution-kicker mt-6">{t("necessity")}</h3>
-              <p className="solution-muted mt-2">{localeText(part.necessity, locale)}</p>
-              <h3 className="solution-kicker mt-6">{t("importance")}</h3>
-              <p className="solution-muted mt-2">{localeText(part.importance, locale)}</p>
-            </SolutionSplit>
-          );
-        })}
-      </div>
+      <SolutionProposal
+        slug={solution.slug}
+        locale={locale}
+        proofHref={`/work/${solution.projectSlug}`}
+        labels={{
+          proposal: t("proposal"),
+          situation: t("situation"),
+          gets: t("gets"),
+          process: t("process"),
+          proof: t("proof"),
+          investment: t("investment"),
+          next: t("next"),
+          terms: t("terms"),
+          guarantee: t("guarantee"),
+          faq: t("faq"),
+          proofCta: t("proofCta"),
+        }}
+      />
 
       <div className="mt-16">
         <p className="solution-kicker">{t("related")}</p>

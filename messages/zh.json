@@ -11,13 +11,20 @@
     "language": "语言",
     "skills": "技能",
     "solutions": "我的方案",
-    "viewWork": "查看作品"
+    "viewWork": "查看作品",
+    "homeLabel": "首页",
+    "education": "教育",
+    "experience": "经历",
+    "contact": "联系"
   },
   "Search": {
     "label": "搜索作品集",
     "placeholder": "搜索…",
     "searching": "搜索中…",
-    "empty": "无结果"
+    "empty": "无结果",
+    "missingKey": "AI 搜索尚未配置。以下是文本匹配。",
+    "error": "搜索暂时无法回答。",
+    "limited": "这个网络的搜索太频繁。请一分钟后再试。"
   },
   "Hero": {
     "ctaPortfolio": "查看案例",
@@ -159,6 +166,7 @@
     "location": "新加坡 · 全球远程"
   },
   "Footer": {
+    "title": "让我们一起合作",
     "blurb": "高级全栈开发者 — 电商、多商户市场、CRM 与 AI 自动化，交付可运营的交接。",
     "navigate": "导航",
     "rights": "保留所有权利。",
@@ -177,7 +185,7 @@
   "Solutions": {
     "eyebrow": "我的方案",
     "title": "能产生结果的系统",
-    "description": "这里不是一份框架清单，而是我搭建的系统——网站、网上商店、CRM、客户获取、自动化、移动应用、区块链和 SEO。每个页面说明这个系统要产生结果，必须先具备什么。",
+    "description": "这里不是一份框架清单，而是我搭建的系统——网站、网上商店、CRM、客户获取、自动化、移动应用、区块链和 SEO。每个页面是写给客户的方案：你会得到什么、工作怎么进行，以及买家会问的问题。",
     "open": "打开此方案",
     "back": "全部方案",
     "necessity": "为什么必要",
@@ -188,11 +196,36 @@
     "standard": "正确的做法",
     "similar": "相关作品",
     "similarCta": "查看项目",
+    "proposal": "方案",
+    "situation": "当前情况",
+    "gets": "你会得到什么",
+    "process": "流程与周期",
+    "proof": "已交付的证明",
+    "proofCta": "打开一个已交付的例子",
+    "investment": "投入",
+    "next": "下一步",
+    "terms": "条款",
+    "guarantee": "保证",
+    "faq": "客户常问的问题",
     "groups": {
       "interface": "界面",
       "backend": "后端",
       "data": "数据",
       "intelligence": "智能"
     }
+  },
+  "Chat": {
+    "label": "询问我的作品",
+    "title": "询问作品集",
+    "close": "关闭对话",
+    "placeholder": "例如：我需要电商",
+    "send": "发送",
+    "greeting": "你需要什么？",
+    "lookAt": "请看我的示例：{title}。",
+    "unsure": "请用你的语言告诉我你需要哪一类。例如：电商、网站、CRM 或自动化。",
+    "intro": "可以问案例、技术栈，或一次合作如何进行。回答只依据本作品集。",
+    "error": "助手暂时无法回答。请稍后再试。",
+    "missingKey": "助手尚未配置。请在服务器上设置 DEEPSEEK_API_KEY。",
+    "limited": "这个网络的提问太频繁。请一分钟后再试。"
   }
 }

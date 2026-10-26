@@ -11,13 +11,20 @@
     "language": "Language",
     "skills": "Skills",
     "solutions": "My Solutions",
-    "viewWork": "View work"
+    "viewWork": "View work",
+    "homeLabel": "Home",
+    "education": "Education",
+    "experience": "Experience",
+    "contact": "Contact"
   },
   "Search": {
     "label": "Search portfolio",
     "placeholder": "Search…",
     "searching": "Searching…",
-    "empty": "No matches"
+    "empty": "No matches",
+    "missingKey": "AI search is not configured yet. Showing text matches.",
+    "error": "Search could not answer just now.",
+    "limited": "Too many searches from this network. Wait a minute and try again."
   },
   "Hero": {
     "ctaPortfolio": "See case studies",
@@ -159,6 +166,7 @@
     "location": "Singapore · Remote worldwide"
   },
   "Footer": {
+    "title": "Let's work together",
     "blurb": "Senior Full Stack Developer — e-commerce, marketplaces, CRM, and AI automation with operator-ready handoff.",
     "navigate": "Navigate",
     "rights": "All rights reserved.",
@@ -177,7 +185,7 @@
   "Solutions": {
     "eyebrow": "My solutions",
     "title": "Systems that produce a result",
-    "description": "These are the systems I build — websites, online stores, CRM, customer acquisition, automation, mobile apps, blockchain, and SEO. Each page shows what has to be in place for that system to produce a result.",
+    "description": "These are the systems I build — websites, online stores, CRM, customer acquisition, automation, mobile apps, blockchain, and SEO. Each page is a proposal written for the client: what you get, how the work runs, and the questions buyers ask.",
     "open": "Open this solution",
     "back": "All solutions",
     "necessity": "Why it is necessary",
@@ -188,11 +196,36 @@
     "standard": "How it is done properly",
     "similar": "Similar work",
     "similarCta": "View project",
+    "proposal": "Proposal",
+    "situation": "The situation",
+    "gets": "What you get",
+    "process": "Process and timescale",
+    "proof": "Proof",
+    "proofCta": "Open a shipped example",
+    "investment": "Investment",
+    "next": "Next step",
+    "terms": "Terms",
+    "guarantee": "Guarantee",
+    "faq": "Questions clients ask",
     "groups": {
       "interface": "Interface",
       "backend": "Backend",
       "data": "Data",
       "intelligence": "Intelligence"
     }
+  },
+  "Chat": {
+    "label": "Ask about my work",
+    "title": "Ask about this portfolio",
+    "close": "Close chat",
+    "placeholder": "For example: I need e-commerce",
+    "send": "Send",
+    "greeting": "What do you need?",
+    "lookAt": "Please look at {title} in my examples.",
+    "unsure": "Tell me the kind of work you need, in your own language. For example: e-commerce, a website, a CRM, or automation.",
+    "intro": "Ask about the case studies, the stack, or how an engagement runs. Answers stay inside this portfolio.",
+    "error": "The assistant could not answer just now. Try again in a moment.",
+    "missingKey": "The assistant is not configured yet. Add DEEPSEEK_API_KEY on the server.",
+    "limited": "Too many questions from this network. Wait a minute and try again."
   }
 }

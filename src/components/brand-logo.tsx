@@ -8,9 +8,9 @@ type BrandLogoProps = {
 };
 
 const sizes = {
-  sm: { box: "h-9 w-9", img: 36 },
-  md: { box: "h-11 w-11", img: 44 },
-  lg: { box: "h-14 w-14", img: 56 },
+  sm: { box: "h-12 w-12", img: 48 },
+  md: { box: "h-16 w-16", img: 64 },
+  lg: { box: "h-20 w-20", img: 80 },
 };
 
 export function BrandLogo({
@@ -22,15 +22,13 @@ export function BrandLogo({
 
   return (
     <span className={`inline-flex items-center gap-3 ${className}`}>
-      <span
-        className={`relative shrink-0 overflow-hidden rounded-full ring-1 ring-[color-mix(in_srgb,#c9a227_55%,transparent)] ${dim.box}`}
-      >
+      <span className={`relative shrink-0 ${dim.box}`}>
         <Image
-          src="/images/vikram-logo.png"
+          src="/images/vikram-sathguru-logo.png"
           alt={`${site.fullName} logo`}
           width={dim.img}
           height={dim.img}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           priority={size !== "sm"}
         />
       </span>

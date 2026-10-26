@@ -6,7 +6,10 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Syne, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MotionRoot } from "@/components/motion";
-import { routing } from "@/i18n/routing";
+import { ChatWidget } from "@/components/chat-widget";
+import { PortfolioIndexProvider } from "@/components/portfolio-index";
+import { catalogFor } from "@/lib/portfolio-context";
+import { routing, type AppLocale } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 import "../globals.css";
 
@@ -33,6 +36,8 @@ const mono = JetBrains_Mono({
   display: "swap",
   preload: false,
 });
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -88,11 +93,9 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({
   children,
-  modal,
   params,
 }: {
   children: React.ReactNode;
-  modal: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
@@ -103,6 +106,8 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tChat = await getTranslations({ locale, namespace: "Chat" });
+  const docs = await catalogFor(locale as AppLocale);
 
   return (
     <html
@@ -112,12 +117,23 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>
-            <MotionRoot>
-              {children}
-              {modal}
-            </MotionRoot>
-          </ThemeProvider>
+          <PortfolioIndexProvider docs={docs}>
+            <ThemeProvider>
+              <MotionRoot>
+                {children}
+                <ChatWidget
+                  labels={{
+                    label: tChat("label"),
+                    title: tChat("title"),
+                    close: tChat("close"),
+                    placeholder: tChat("placeholder"),
+                    send: tChat("send"),
+                    intro: tChat("intro"),
+                  }}
+                />
+              </MotionRoot>
+            </ThemeProvider>
+          </PortfolioIndexProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -34,13 +34,13 @@ export function Header() {
       style={{ viewTransitionName: "site-header" }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-[var(--border)] bg-[color-mix(in_srgb,var(--background)_90%,transparent)] shadow-sm backdrop-blur-xl"
-          : "bg-[color-mix(in_srgb,var(--background)_70%,transparent)] backdrop-blur-md"
+          ? "border-b border-[var(--border)] bg-[var(--glass-strong)] shadow-[0_10px_40px_var(--shadow)] backdrop-blur-xl"
+          : "bg-transparent"
       }`}
     >
       <div className="site-container flex h-[4.25rem] items-center justify-between gap-4 px-5 sm:px-8">
         <a href="#top" aria-label={t("home")} className="shrink-0">
-          <BrandLogo size="md" />
+          <BrandLogo size="md" showWordmark={false} />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -75,7 +75,7 @@ export function Header() {
           <ThemeToggle />
           <a
             href={`/${locale}#portfolio`}
-            className="inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white transition hover:brightness-110"
+            className="btn-primary inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold"
           >
             {t("viewWork")}
           </a>
@@ -109,7 +109,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-[var(--border)] bg-[var(--background)] px-5 py-4 md:hidden">
+        <div className="border-t border-[var(--border)] bg-[var(--glass-strong)] px-5 py-4 backdrop-blur-xl md:hidden">
           <nav className="flex flex-col gap-1">
             {navItems.map((link) =>
               link.key === "solutions" ? (
@@ -135,7 +135,7 @@ export function Header() {
             <a
               href={`/${locale}#portfolio`}
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex h-11 items-center justify-center rounded-full bg-[var(--accent)] px-6 text-sm font-semibold text-white"
+              className="btn-primary mt-2 inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold"
             >
               {t("viewWork")}
             </a>
