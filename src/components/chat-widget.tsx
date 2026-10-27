@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link as LocaleLink } from "@/i18n/navigation";
 import { usePortfolioIndex } from "@/components/portfolio-index";
-import { suggestPage } from "@/lib/chat-intents";
+import { planReply } from "@/lib/chat-intents";
 import type { SearchDoc } from "@/lib/search-docs";
 
 type Message = { role: "user" | "assistant"; content: string; link?: SearchDoc };
@@ -22,12 +22,14 @@ const ASKED_KEY = "vikram-chat-asked";
 
 export function ChatWidget({ labels }: { labels: Labels }) {
   const t = useTranslations("Chat");
+  const locale = useLocale();
   const docs = usePortfolioIndex();
   const titleId = useId();
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const threadRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
+  const [pending, setPending] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
 
   const greeting = t("greeting");
@@ -58,18 +60,53 @@ export function ChatWidget({ labels }: { labels: Labels }) {
     setOpen(false);
   }
 
-  function send(text: string) {
+  function localReply(content: string): Message {
+    const reply = planReply(docs, content);
+    if (reply.kind === "greeting") return { role: "assistant", content: t("greeting") };
+    if (reply.kind === "answer") {
+      return { role: "assistant", content: `${t("answer")} ${reply.doc.excerpt}`, link: reply.doc };
+    }
+    return { role: "assistant", content: t("unsure") };
+  }
+
+  async function send(text: string) {
     const content = text.trim();
-    if (!content) return;
-    const link = suggestPage(docs, content);
-    setMessages((current) => [
-      ...current,
-      { role: "user", content },
-      link
-        ? { role: "assistant", content: "", link }
-        : { role: "assistant", content: t("unsure") },
-    ]);
+    if (!content || pending) return;
+    const history = messages.slice(-6).map((message) => ({
+      role: message.role,
+      content: message.content,
+    }));
     setInput("");
+    setPending(true);
+    setMessages((current) => [...current, { role: "user", content }]);
+    try {
+      const response = await fetch("/api/chat/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ locale, message: content, history }),
+      });
+      if (response.status === 429) {
+        setMessages((current) => [...current, { role: "assistant", content: t("limited") }]);
+        return;
+      }
+      if (response.status === 503) {
+        setMessages((current) => [...current, { role: "assistant", content: t("missingKey") }]);
+        return;
+      }
+      if (!response.ok) {
+        setMessages((current) => [...current, { role: "assistant", content: t("error") }]);
+        return;
+      }
+      const data = (await response.json()) as { message?: string; href?: string | null };
+      const textReply = data.message?.trim();
+      if (!textReply) throw new Error("chat");
+      const link = data.href ? docs.find((doc) => doc.href === data.href) : undefined;
+      setMessages((current) => [...current, { role: "assistant", content: textReply, link }]);
+    } catch {
+      setMessages((current) => [...current, localReply(content)]);
+    } finally {
+      setPending(false);
+    }
   }
 
   return (
@@ -96,11 +133,19 @@ export function ChatWidget({ labels }: { labels: Labels }) {
                   <p className="inline-block rounded-2xl bg-[var(--accent)] px-3 py-2 text-left text-white">{message.content}</p>
                 ) : (
                   <div className="rounded-2xl bg-[var(--background)] px-3 py-2 text-[var(--foreground)]">
-                    {message.link ? <LookAt link={message.link} template={t("lookAt", { title: "%%TITLE%%" })} onNavigate={close} /> : <p>{message.content}</p>}
+                    {message.content ? <p>{message.content}</p> : null}
+                    {message.link ? (
+                      <LookAt
+                        link={message.link}
+                        template={t("lookAt", { title: "%%TITLE%%" })}
+                        onNavigate={close}
+                      />
+                    ) : null}
                   </div>
                 )}
               </div>
             ))}
+            {pending ? <p className="text-[var(--muted)]">{t("thinking")}</p> : null}
           </div>
           <form
             className="flex gap-2 border-t border-[var(--border)] p-3"
@@ -120,6 +165,7 @@ export function ChatWidget({ labels }: { labels: Labels }) {
               placeholder={labels.placeholder}
               className="min-h-11 flex-1 resize-none rounded-2xl border border-[var(--border)] bg-[var(--background)] px-3 py-2 text-sm text-[var(--foreground)]"
               onChange={(event) => setInput(event.target.value)}
+              disabled={pending}
               onKeyDown={(event) => {
                 if (event.key === "Enter" && !event.shiftKey) {
                   event.preventDefault();
@@ -128,7 +174,7 @@ export function ChatWidget({ labels }: { labels: Labels }) {
                 if (event.key === "Escape") close();
               }}
             />
-            <button type="submit" className="btn-primary self-end h-11 rounded-full px-4 text-sm font-semibold" disabled={!input.trim()}>
+            <button type="submit" className="btn-primary self-end h-11 rounded-full px-4 text-sm font-semibold" disabled={pending || !input.trim()}>
               {labels.send}
             </button>
           </form>
@@ -157,7 +203,7 @@ function LookAt({
 }) {
   const [before, after] = template.split("%%TITLE%%");
   return (
-    <p>
+    <p className={before || after ? "mt-2" : undefined}>
       {before}
       <LocaleLink href={link.href} className="font-semibold text-[var(--accent)]" onClick={onNavigate}>
         {link.title}

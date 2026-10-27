@@ -29,7 +29,17 @@ export async function catalogFor(locale: AppLocale): Promise<SearchDoc[]> {
     title: localeText(solution.name, locale),
     href: `/solutions/${solution.slug}`,
     excerpt: localeText(solution.tagline, locale),
-    text: [localeText(solution.overview, locale), localeText(solution.promise, locale)].join("\n"),
+    text: [
+      localeText(solution.overview, locale),
+      localeText(solution.promise, locale),
+      localeText(solution.standard, locale),
+      ...solution.outcomes.map((outcome) => localeText(outcome, locale)),
+      ...solution.parts.flatMap((part) => [
+        localeText(part.title, locale),
+        localeText(part.necessity, locale),
+        localeText(part.importance, locale),
+      ]),
+    ].join("\n"),
   }));
 
   return [...projectDocs, ...solutionDocs];

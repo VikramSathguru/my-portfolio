@@ -220,12 +220,14 @@
     "close": "关闭对话",
     "placeholder": "例如：我需要电商",
     "send": "发送",
-    "greeting": "你需要什么？",
-    "lookAt": "请看我的示例：{title}。",
+    "greeting": "你好。很高兴你来问。你需要什么？",
+    "answer": "好的。这是和你说的需求相符的工作。",
+    "lookAt": "页面在这里：{title}。",
     "unsure": "请用你的语言告诉我你需要哪一类。例如：电商、网站、CRM 或自动化。",
     "intro": "可以问案例、技术栈，或一次合作如何进行。回答只依据本作品集。",
+    "thinking": "请稍等。",
     "error": "助手暂时无法回答。请稍后再试。",
-    "missingKey": "助手尚未配置。请在服务器上设置 DEEPSEEK_API_KEY。",
+    "missingKey": "助手尚未配置。请在服务器上设置 LLM_API_KEY。",
     "limited": "这个网络的提问太频繁。请一分钟后再试。"
   }
 }

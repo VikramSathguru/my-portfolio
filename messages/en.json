@@ -220,12 +220,14 @@
     "close": "Close chat",
     "placeholder": "For example: I need e-commerce",
     "send": "Send",
-    "greeting": "What do you need?",
-    "lookAt": "Please look at {title} in my examples.",
+    "greeting": "Hello. I'm glad you wrote. What do you need?",
+    "answer": "Yes. This is the work that fits what you described.",
+    "lookAt": "Here is the page: {title}.",
     "unsure": "Tell me the kind of work you need, in your own language. For example: e-commerce, a website, a CRM, or automation.",
     "intro": "Ask about the case studies, the stack, or how an engagement runs. Answers stay inside this portfolio.",
+    "thinking": "One moment.",
     "error": "The assistant could not answer just now. Try again in a moment.",
-    "missingKey": "The assistant is not configured yet. Add DEEPSEEK_API_KEY on the server.",
+    "missingKey": "The assistant is not configured yet. Add LLM_API_KEY on the server.",
     "limited": "Too many questions from this network. Wait a minute and try again."
   }
 }
